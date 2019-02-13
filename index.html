@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding Otaku</title>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta name="description" content="Coding tutorials and otaku contents">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="author" content="Rahul Sivananda">
+
+    <link href='styles/bootstrap.min.css' rel='stylesheet'>
+    <link href='styles/main.css' rel='stylesheet'>
+    <meta name="keywords" content="HTML,CSS,XML,Java,Games,Otaku,Coding,Anime,Downloader,coding otaku,tutorials">
+    <link rel="icon" type="image/png" href="images/me.png">
+
+    <style>
+        a:focus {
+            outline: none !important;
+        }
+
+        .card-img-top {
+            height: 10vw;
+            padding-top: inherit;
+        }
+
+        /* bs3: mobile navbar without js custom
+        * ------------------------------------
+        * show the collapse when navbar toggle is checked */
+        #navbar-toggle-cbox:checked~.collapse {
+            display: block;
+        }
+
+        /* the checkbox used only internally; don't display it */
+        #navbar-toggle-cbox {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <label id="show" for="show-menu" class="show-menu">
+        Menu
+        <div class="menu-bar">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </div>
+    </label>
+    <input type="checkbox" id="show-menu" role="button">
+    <ul id="menu">
+        <li>
+            <a href="/">
+                <img alt="Logo" src="/images/me_nobg.png" class="img-responsive" style="width:55px;" />
+            </a>
+        </li>
+        <li>
+            <a href="#apps" area-labledby="show">Apps</a>
+        </li>
+        <li class="nav-item">
+            <a href="#apis">APIs</a>
+        </li>
+        <li class="nav-item">
+            <a href="#sources">Sources</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact">Contact me!</a>
+        </li>
+    </ul>
+    <div class="jumbotron jumbotron-fluid text-center bg-secondary text-white" style="margin-bottom:0">
+        <h1>Coding Otaku</h1>
+        <p>An Otaku who loves coding and Anime</p>
+    </div>
+    <br />
+    <div class="jumbotron bg-dark text-center text-white">
+        <p class="text-danger">Be warned!</p>
+        Look back, go through your old source codes, you will always laugh at yourself for your horrible spaghetti
+        code.<br />
+        So I won't be looking back, they will haunt me.<br /><br />
+        <p class="text-danger font-weight-bold">Proceed with caution!</p>
+    </div>
+
+    <div class="jumbotron bg-dark text-white">
+        <u>
+            <h3 id="apps" class="text-center">Apps and fun!</h3>
+        </u>
+        <div class="list-group list-group-flush bg-dark">
+            <a href="DinoClone/" class="list-group-item list-group-item-action bg-dark text-white">
+                <h5 class="mb-1">Dino Clone</h5>
+                <div class="d-flex w-100 justify-content-between">
+                </div>
+                <p class="mb-1">A silly buggy clone for Google chrome Dino Dash.</p>
+            </a>
+            <div class="card-footer w-100"></div>
+            <a href="Popup-Youtube-Updated/" class="list-group-item list-group-item-action bg-dark text-white">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">PopupYouTube</h5>
+                </div>
+                <p class="mb-1">Watch youtube playlists and videos without the annoying distractions and ads.</p>
+            </a>
+            <div class="card-footer w-100"></div>
+            <a href="Animu-Downloaderu/" class="list-group-item list-group-item-action bg-dark text-white">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">AnimuDownloaderu</h5>
+                </div>
+                <p class="mb-1">A Java based desktop app for downloading anime in batch.</p>
+            </a>
+            <div class="card-footer w-100"></div>
+            <a href="Kurumi-Everywhere/" class="list-group-item list-group-item-action bg-dark text-white">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Kurumi-Everywhere</h5>
+                </div>
+                <p class="mb-1">Firefox addon that Replaces all images in every websites to kawaii images of Tokisaki
+                    Kurumi.</p>
+            </a>
+            <div class="card-footer w-100"></div>
+            <a href="LissajousFigures/" target="_blank"
+                class="list-group-item list-group-item-action  bg-dark text-white">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">LissajousFigures</h5>
+                </div>
+                <p class="mb-1"> LissajousFigures with p5.js</p>
+            </a>
+            <div class="card-footer w-100"></div>
+            <a href="7-Segment-Digital-Matrix-Rain/" target="_blank"
+                class="list-group-item list-group-item-action  bg-dark text-white">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">7 Segment Matrix Rain</h5>
+                </div>
+                <p class="mb-1">Inspired by @tomscott's video and @shiffman coding challenge
+                    #thisdot7segment and @emilyxxie guest tutorial from 2017</p>
+            </a>
+            <div class="card-footer w-100"></div>
+
+        </div>
+    </div>
+
+    <div class="jumbotron bg-dark text-white">
+        <u>
+            <h3 id="apis" class="text-center">APIs and wrappers</h3>
+        </u>
+
+        <div class="list-group list-group-flush bg-dark">
+            <a href="JEdenManga/" class="list-group-item list-group-item-action bg-dark text-white">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">JEdenManga</h5>
+                </div>
+                <p class="mb-1">A java wrapper for MangaEden API</p>
+            </a>
+            <div class="card-footer bg-dark w-100"></div>
+            <a href="AnimeCrawlerAPI/" class="list-group-item list-group-item-action bg-dark text-white">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">AnimeCrawlerAPI</h5>
+                </div>
+                <p class="mb-1">A java crawling api for fetching anime details</p>
+            </a>
+            <div class="card-footer bg-dark w-100"></div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="jumbotron bg-secondary text-center text-white">
+        <h3 id="sources">Source code!</h3>
+        All source codes are available on
+        <a class="text-warning" href="https://github.com/codingotaku" target="_blank">GitHUb</a>
+    </div>
+
+    <div class="jumbotron bg-dark text-center text-white">
+        <h3 id="contact"></h3>
+        <section>
+            <div class="jumbotron jumbotron-fluid bg-dark text-white text-center">
+                <img src="/images/me.png" alt="Logo" width="100" />
+                <p class="text-white">The best way to get in touch with me is by email:
+                    <a class="text-warning" href="mailto:contact@codingotaku.com">contact@codingotaku.com</a></p>
+                <p class="text-danger"> I respond to most messages if I can, but I can't guarantee a reply.</p>
+            </div>
+
+            <div class="container text-left bg-dark text-white">
+                <h4 class="text-center">You can also follow me on</h4>
+                <p class="text-danger text-center">↓</p>
+                <br />
+                <ul class="list-group list-group-flush bg-dark text-white">
+                    <a href="http://github.com/codingotaku" target="_balnk"
+                        class="list-group-item list-group-item-action bg-secondary text-white">
+                        <img src="icons/github.svg" /> GitHub
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCrCgykG-bfmB4SpOKV79fhA" target="_balnk"
+                        class="list-group-item list-group-item-action bg-secondary text-white">
+                        <img src="icons/youtube.svg" /> YouTube
+                    </a>
+                    <a href="https://twitter.com/CodingOtaku" target="_balnk"
+                        class="list-group-item list-group-item-action bg-secondary text-white">
+                        <img src="icons/twitter.svg" /> Twitter
+                    </a>
+                    <a href="https://www.minds.com/CodingOtaku" target="_balnk"
+                        class="list-group-item list-group-item-action bg-secondary text-white">
+                        <img src="icons/minds.svg" width=25em /> Minds.com
+                    </a>
+                    <a href="https://www.wattpad.com/user/CodingOtaku" target="_balnk"
+                        class="list-group-item list-group-item-action bg-secondary text-white">
+                        <img src="icons/wattpad.svg" width=25em /> Wattpad
+                    </a>
+                </ul>
+            </div>
+        </section>
+    </div>
+    </footer>
+    <br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br />
+</body>
+
+</html>

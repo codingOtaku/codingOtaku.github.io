@@ -207,6 +207,11 @@
         </section>
     </div>
     </footer>
+    <script>
+        document.querySelectorAll('li a').forEach(el => el.addEventListener('click', function (e) {
+            document.getElementById('show-menu').checked = false;
+        }));
+    </script>
     <br />
     <br /><br />
     <br /><br />

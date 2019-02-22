@@ -36,6 +36,24 @@
         #navbar-toggle-cbox {
             display: none;
         }
+
+        footer {
+            background: #525252;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer div a {
+            color: #eeeeee;
+            font-size: 20px;
+            padding: 10px;
+            border-right: 1px solid #70726F;
+            transition: all .5s ease;
+        }
+
+        footer div a:hover {
+            color: white;
+        }
     </style>
 </head>
 
@@ -181,35 +199,31 @@
                 <h4 class="text-center">You can also follow me on</h4>
                 <p class="text-danger text-center">↓</p>
                 <br />
-                <ul class="list-group list-group-flush bg-dark text-white">
-                    <a href="https://github.com/codingotaku" target="_balnk"
-                        class="list-group-item list-group-item-action bg-secondary text-white">
-                        <img src="icons/github.svg" /> GitHub
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCrCgykG-bfmB4SpOKV79fhA" target="_balnk"
-                        class="list-group-item list-group-item-action bg-secondary text-white">
-                        <img src="icons/youtube.svg" /> YouTube
-                    </a>
-                    <a href="https://twitter.com/CodingOtaku" target="_balnk"
-                        class="list-group-item list-group-item-action bg-secondary text-white">
-                        <img src="icons/twitter.svg" /> Twitter
-                    </a>
-                    <a href="https://www.minds.com/CodingOtaku" target="_balnk"
-                        class="list-group-item list-group-item-action bg-secondary text-white">
-                        <img src="icons/minds.svg" width=25em /> Minds.com
-                    </a>
-                    <a href="https://www.wattpad.com/user/CodingOtaku" target="_balnk"
-                        class="list-group-item list-group-item-action bg-secondary text-white">
-                        <img src="icons/wattpad.svg" width=25em /> Wattpad
-                    </a>
-                    <a rel="me" href="https://fosstodon.org/@CodingOtaku">
-                        <img src="icons/mastodon.svg" width=25em />Mastodon
-                    </a>
-                </ul>
+                <footer>
+                    <div class="container text-center">
+                        <a href="https://github.com/codingotaku" target="_balnk">
+                            <img src="icons/github.svg" /> GitHub
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCrCgykG-bfmB4SpOKV79fhA" target="_balnk">
+                            <img src="icons/youtube.svg" /> YouTube
+                        </a>
+                        <a href="https://twitter.com/CodingOtaku" target="_balnk">
+                            <img src="icons/twitter.svg" /> Twitter
+                        </a>
+                        <a href="https://www.minds.com/CodingOtaku" target="_balnk">
+                            <img src="icons/minds.svg" width=25em /> Minds.com
+                        </a>
+                        <a href="https://www.wattpad.com/user/CodingOtaku" target="_balnk">
+                            <img src="icons/wattpad.svg" width=25em /> Wattpad
+                        </a>
+                        <a rel="me" href="https://fosstodon.org/@CodingOtaku" target="_balnk">
+                            <img src="icons/mastodon.svg" width=25em />Mastodon
+                        </a>
+                    </div>
+                </footer>
             </div>
         </section>
     </div>
-    </footer>
     <script>
         document.querySelectorAll('li a').forEach(el => el.addEventListener('click', function (e) {
             document.getElementById('show-menu').checked = false;
@@ -219,6 +233,7 @@
     <br /><br />
     <br /><br />
     <br /><br />
+    <h4 class="text-center text-white">No Ads, No Google Analytics, No Affiliates, No Cross-Site Requests</h4>
     <br />
 </body>
 

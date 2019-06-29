@@ -5,7 +5,7 @@
     <title>Coding Otaku</title>
     <meta charset='utf-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    
+
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
 
@@ -44,6 +44,9 @@
         </li>
         <li class="nav-item">
             <a href="#sources">Sources</a>
+        </li>
+        <li class="nav-item">
+            <a href="#donate">Donations</a>
         </li>
         <li class="nav-item">
             <a href="#contact">Contact me!</a>
@@ -143,13 +146,44 @@
 
 
     <div class="jumbotron bg-secondary text-center text-white">
+        <span id="sources"></span>
+        <br /><br /><br />
         <h3 id="sources">Source code!</h3>
         All source codes are FLOSS (Free/Libre and Open-Source Software! &hearts; ) and available on
         <a class="text-warning" href="https://github.com/codingotaku" target="_blank">GitHub</a>
-        <br/>
+        <br />
         You can do whatever you want with them ;)
-                
     </div>
+    <div class="card-footer w-100"></div>
+
+    <div class="jumbotron bg-dark text-center text-white">
+        <span id="donate"></span>
+        <br /><br /><br />
+        <h3>Donations</h3>
+        <section>
+            Everything I do is free, but I will leave these here anyway <br /><br />
+            <a href="https://liberapay.com/codingotaku/donate" target="_blank" class="text-white">
+                <img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">
+            </a>
+            <a href="https://paypal.me/codingotaku" target="_blank">
+                <img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif"
+                    title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            </a>
+            <span>
+                <a class="patreon_link" href="https://www.patreon.com/bePatron?u=13678963" target="_blank"
+                    data-patreon-widget-type="become-patron-button">
+                    <svg width="20" height="50" viewBox="0 0 569 546" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <circle data-fill="1" id="Oval" cx="362.589996" cy="204.589996" r="204.589996"></circle>
+                            <rect data-fill="2" id="Rectangle" x="0" y="0" width="100" height="545.799988"></rect>
+                        </g>
+                    </svg>
+                    Become a Patron!
+                </a>
+            </span>
+        </section>
+    </div>
+    <div class="card-footer w-100"></div>
 
     <div class="jumbotron bg-dark text-center text-white">
         <h3 id="contact"></h3>
@@ -178,7 +212,8 @@
                         </a>
                     </div>
                     <div class="container text-center">
-                        <a href="https://beta.lbry.tv/@codingotaku/f0b1479bbb64316ed1d30358e6cd324b67aa3587" target="_balnk">
+                        <a href="https://beta.lbry.tv/@codingotaku/f0b1479bbb64316ed1d30358e6cd324b67aa3587"
+                            target="_balnk">
                             <img src="icons/lbry.svg" width=25em /> LBRY
                         </a>
                     </div>
@@ -196,17 +231,19 @@
                 </footer>
             </div>
         </section>
-        <br/>
+
         <div class="text-white">
-            <img src="icons/no-facebook.png" height="60em"/> Copy <a href=icons/no-facebook.png>this button</a> (courtesy of R.Siddharth) to express your rejection of Facebook.
+            <br/>
+            <img src="icons/no-facebook.png" height="60em">            
+            Copy <a href=icons/no-facebook.png>this button</a>  
+            (courtesy of R.Siddharth) to express your rejection of Facebook.<br />
         </div>
+        <script>
+            document.querySelectorAll('li a').forEach(el => el.addEventListener('click', function (e) {
+                document.getElementById('show-menu').checked = false;
+            }));
+        </script>
     </div>
-    <script>
-        document.querySelectorAll('li a').forEach(el => el.addEventListener('click', function (e) {
-            document.getElementById('show-menu').checked = false;
-        }));
-    </script>
-    <br />
 </body>
 
 </html>

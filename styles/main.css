@@ -140,6 +140,18 @@ footer div a:hover {
     color: white;
 }
 
+.patreon_link{
+    border-radius: 50px 50px 50px 50px;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(232, 91, 70);
+}
+
+.patreon_link{
+    text-decoration: none;
+}
 /*Responsive Styles*/
 @media screen and (max-width : 992px){
     /*Make dropdown links appear inline*/

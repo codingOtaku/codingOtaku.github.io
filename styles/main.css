@@ -168,7 +168,6 @@ footer div a:hover {
      .show-menu {
         display:block;
         list-style-type:none;
-        width: 100%;
         height: 55px;
         position: -webkit-static;
         position: sticky;

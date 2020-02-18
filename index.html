@@ -47,39 +47,38 @@
 </head>
 
 <body class="bg-dark" id="home">
-    <span class="nav-bar">
-        <label class="show-menu">
-            Menu
-            <div class="menu-bar">
-                <!-- hamburger menu-->
-                <div class="menu"></div>
-                <div class="menu"></div>
-                <div class="menu"></div>
-            </div>
-        </label>
-        <ul id="menu">
-            <li>
-                <a href="#home">
-                    <img alt="Logo" src="/images/me_nobg.png" class="img-responsive" style="width:55px;" />
-                </a>
-            </li>
-            <li>
-                <a href="#apps" area-labledby="show">Apps</a>
-            </li>
-            <li class="nav-item">
-                <a href="#apis">APIs</a>
-            </li>
-            <li class="nav-item">
-                <a href="#sources">Sources</a>
-            </li>
-            <li class="nav-item">
-                <a href="#donate">Donations</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact">Contact me!</a>
-            </li>
-        </ul>
-    </span>
+    <label id="show" for="show-menu" class="show-menu">
+        Menu
+        <div class="menu-bar">
+            <!-- hamburger menu-->
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </div>
+    </label>
+    <input type="checkbox" id="show-menu" role="button">
+    <ul id="menu">
+        <li>
+            <a href="#home">
+                <img alt="Logo" src="/images/me_nobg.png" class="img-responsive" style="width:55px;" />
+            </a>
+        </li>
+        <li>
+            <a href="#apps" area-labledby="show">Apps</a>
+        </li>
+        <li class="nav-item">
+            <a href="#apis">APIs</a>
+        </li>
+        <li class="nav-item">
+            <a href="#sources">Sources</a>
+        </li>
+        <li class="nav-item">
+            <a href="#donate">Donations</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact">Contact me!</a>
+        </li>
+    </ul>
     <div class="jumbotron jumbotron-fluid text-center bg-secondary text-white" style="margin-bottom:0">
         <h1>Coding Otaku</h1>
         <p>An Otaku who loves coding and Anime</p>

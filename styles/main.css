@@ -89,14 +89,12 @@ li ul li a {
     line-height: 50px; 
     display: none;
 }
-
-/*Show menu when hover over navbar*/
-.nav-bar:hover #menu{
-    display: block;
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
 }
-
-/**failsafe for some browsers*/
-#menu:hover {
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
@@ -107,6 +105,18 @@ a:focus {
 .card-img-top {
     height: 10vw;
     padding-top: inherit;
+}
+
+/* bs3: mobile navbar without js custom
+* ------------------------------------
+* show the collapse when navbar toggle is checked */
+#navbar-toggle-cbox:checked~.collapse {
+    display: block;
+}
+
+/* the checkbox used only internally; don't display it */
+#navbar-toggle-cbox {
+    display: none;
 }
 
 footer {
@@ -142,15 +152,11 @@ footer div a:hover {
 /*Responsive Styles*/
 @media screen and (max-width : 992px){
     /*Make dropdown links appear inline*/
-    .nav {
-        position: -webkit-fixed;
-        position: fixed;
-    }
     ul {
         display: none;
-        position: -webkit-fixed;
+        position: -webkit-static;
         top:55px;
-        position: fixed;
+        position: sticky;
     }
 
     /*Make all menu links full width*/

@@ -186,8 +186,8 @@ footer div a:hover {
         color: #eeeeee;
         font-size: 10px;
         padding: 5px;
-        border-left: 1px solid #70726F;
-        border-right: 1px solid #70726F;
+        border-left: 0;
+        border-right: 0;
         transition: all .5s ease;
     }
 }

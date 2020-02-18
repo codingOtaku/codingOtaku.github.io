@@ -149,6 +149,13 @@ footer div a:hover {
     background-color: rgb(232, 91, 70);
 }
 
+.language {
+    background-color: #5b80e6;
+    border-radius: 6px;
+    border: 1px solid white;
+    padding: 2px;
+    font-size: 12px;
+}
 /*Responsive Styles*/
 @media screen and (max-width : 992px){
     /*Make dropdown links appear inline*/

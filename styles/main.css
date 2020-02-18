@@ -142,11 +142,15 @@ footer div a:hover {
 /*Responsive Styles*/
 @media screen and (max-width : 992px){
     /*Make dropdown links appear inline*/
+    .nav {
+        position: -webkit-fixed;
+        position: fixed;
+    }
     ul {
         display: none;
-        position: -webkit-static;
+        position: -webkit-fixed;
         top:55px;
-        position: sticky;
+        position: fixed;
     }
 
     /*Make all menu links full width*/

@@ -13,10 +13,10 @@
     <meta name="author" content="Rahul Sivananda">
     <meta name="keywords" content="HTML,CSS,XML,Java,Games,Otaku,Coding,Anime,Downloader,coding otaku,tutorials">
 
-    <link href='styles/framework.css' rel='stylesheet'>
-    <link href='styles/main.css' rel='stylesheet'>
+    <link href='/styles/framework.css' rel='stylesheet'>
+    <link href='/styles/main.css' rel='stylesheet'>
 
-    <link rel="icon" type="image/png" href="images/me.png">
+    <link rel="icon" type="image/png" href="/images/me.png">
 
     <script>
         /*
@@ -46,7 +46,7 @@
     </script>
 </head>
 
-<body class="bg-dark" id="home">
+<body class="bg-dark">
     <label id="show" for="show-menu" class="show-menu">
         Menu
         <div class="menu-bar">
@@ -59,7 +59,7 @@
     <input type="checkbox" id="show-menu" role="button">
     <ul id="menu">
         <li>
-            <a href="#home">
+            <a href="/#">
                 <img alt="Logo" src="/images/me_nobg.png" class="img-responsive" style="width:55px;" />
             </a>
         </li>
@@ -74,6 +74,9 @@
         </li>
         <li class="nav-item">
             <a href="#donate">Donations</a>
+        </li>
+        <li class="nav-item">
+            <a href="/notes/">Notes</a>
         </li>
         <li class="nav-item">
             <a href="#contact">Contact me!</a>
@@ -235,7 +238,7 @@
         <h3 id="contact"></h3>
         <section>
             <div class="jumbotron jumbotron-fluid bg-dark text-white text-center">
-                <img src="/images/me.png" alt="Logo" width="100" />
+                <img src="/images/me.png" alt="Codingotaku Logo" width="100" />
                 <p class="text-white">The best way to get in touch with me is by email:
                     <a class="text-warning" href="mailto:contact@codingotaku.com">contact@codingotaku.com</a></p>
                 <p class="text-danger"> I respond to most messages if I can, but I can't guarantee a reply.</p>
@@ -248,26 +251,26 @@
                 <footer>
                     <div class="text-center">
                         <a href="https://github.com/codingotaku" target="_balnk">
-                            <img src="icons/github.svg" height=25em /> GitHub
+                            <img src="icons/github.svg" height=25em alt="GitHub Icon"/> GitHub
                         </a>
                         <a rel="me" href="https://fosstodon.org/@CodingOtaku" target="_balnk">
-                            <img src="icons/mastodon.svg" height=25em /> Mastodon
+                            <img src="icons/mastodon.svg" height=25em alt="Mastodon Icon"/> Mastodon
                         </a>
                         <a href="https://www.minds.com/CodingOtaku" target="_balnk">
-                            <img src="icons/minds.svg" height=25em /> Minds
+                            <img src="icons/minds.svg" height=25em alt="Minds Icon"/> Minds
                         </a>
                     </div>
                     <div class="text-center">
                         <a href="https://beta.lbry.tv/@codingotaku" target="_balnk">
-                            <img src="icons/lbry.svg" height=25em /> LBRY
+                            <img src="icons/lbry.svg" height=25em alt="LBRY Icon" /> LBRY
                         </a>
                     </div>
                     <div class="text-center">
                         <a href="https://www.wattpad.com/user/CodingOtaku" target="_balnk">
-                            <img src="icons/wattpad.svg" height=25em /> Wattpad
+                            <img src="icons/wattpad.svg" height=25em alt="Wattpad Icon" /> Wattpad
                         </a>
                         <a href="https://www.youtube.com/channel/UCrCgykG-bfmB4SpOKV79fhA" target="_balnk">
-                            <img src="icons/youtube.svg" height=25em /> YouTube
+                            <img src="icons/youtube.svg" height=25em alt="Youtube icon"/> YouTube
                         </a>
                     </div>
                 </footer>
@@ -275,8 +278,9 @@
         </section>
         <br>
         <div class="text-white">
-            <img src="icons/no-facebook.png" height="60em">
-            &nbsp;Copy <a href=icons/no-facebook.png>this button</a> (courtesy of R.Siddharth) to express your rejection of
+
+            <img src="/icons/no-facebook.png" height="60em" alt="You won't find me on Facebook">
+            &nbsp;Copy <a href=/icons/no-facebook.png>this button</a> (courtesy of R.Siddharth) to express your rejection of
                 Facebook.<br />
         </div>
     </div>

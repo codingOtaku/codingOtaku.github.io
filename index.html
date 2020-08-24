@@ -19,15 +19,30 @@
 
 <body>
   <style>
-    a[target="_blank"]:after { content: url('/icons/external-link-icon.png')}
+    a[target="_blank"]:after {
+      content: url('/icons/external-link-icon.png')
+    }
+
     @media screen and (max-width: 1023px) {
+
       /* show mavbar-menu on screen less than 1024px */
-      #menu-toggle:checked ~ #navbar-coding-otaku { display: block; }
-  
+      #menu-toggle:checked~#navbar-coding-otaku {
+        display: block;
+      }
+
       /* make navbar-burger become cross on screen less than 1024px */
-      #menu-toggle:checked + .navbar-brand > label > span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
-      #menu-toggle:checked + .navbar-brand > label > span:nth-child(2) { opacity: 0; }
-      #menu-toggle:checked + .navbar-brand > label > span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+      #menu-toggle:checked+.navbar-brand>label>span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+      }
+
+      #menu-toggle:checked+.navbar-brand>label>span:nth-child(2) {
+        opacity: 0;
+      }
+
+      #menu-toggle:checked+.navbar-brand>label>span:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+      }
+
       /* you can also replace + with ~ in above three rules and get the same result */
     }
   </style>
@@ -52,7 +67,7 @@
             <a class="navbar-item" href="#apis">APIs</a>
             <a class="navbar-item" href="#sources">Sources</a>
             <a class="navbar-item" href="#donate">Donations</a>
-            <a class="navbar-item" href="https://blog.codingotaku.com" target="_blank" >Blogs</a>
+            <a class="navbar-item" href="https://blog.codingotaku.com" target="_blank">Blogs</a>
             <a class="navbar-item" href="#contact">Contact me!</a>
           </div>
         </div>
@@ -305,61 +320,59 @@
     <div class="container is-fluid has-text-centered box">
       <span class="hidden-title" id="contact"></span>
       <h1 class="title">Contact Me!</h1>
-      <div class="container is-fluid">
-        <div class="box has-text-centered">
-          <img src="/images/me.png" alt="Codingotaku Logo" width="100" />
-          <p class="text-white">The best way to get in touch with me is by using either of the e-mail address
-            below<br>
-            <a class="has-text-link" href="mailto:contact@codingotaku.com">contact@codingotaku.com</a><br>
-            <a class="has-text-link" href="mailto:codingotaku@member.fsf.org">codingotaku@member.fsf.org</a>
-          </p><br>
-          <p class="has-text-danger"> I respond to most messages if I can, but I can't guarantee a reply.</p><br>
-          XMPP Group : <strong>codingotaku@conference.member.fsf.org</strong><br><br>
-          <img src="https://static.fsf.org/nosvn/associate/crm/5009114.png"
-            alt="Free Software Foundation member since July 2020" width="200" />
-        </div>
-        <br>
-        <div class="box">
-          <h1 class="title  has-text-centered">You can also find me on</h1>
-          <h1 class="subtitle has-text-danger has-text-centered">↓</h1>
-          <br />
-          <div class="columns">
-            <a class="column tile" href="https://gitlab.com/codingotaku" target="_blank">
-              <div class="image is-64x64">
-                <img src="/icons/gitlab.svg" alt="GitLab Icon" />
-              </div>&nbsp;GitLab
-            </a>
-            <a class="column tile" href="https://github.com/codingotaku" target="_blank">
-              <div class="image is-64x64">
-                <img src="/icons/github.svg" alt="GitHub Icon" />
-              </div>&nbsp;GitHub
-            </a>
-            <a class="column tile" href="https://fosstodon.org/@CodingOtaku" target="_blank">
-              <div class="image is-64x64">
-                <img src="/icons/mastodon.svg" alt="Mastodon Icon" />
-              </div>&nbsp;Mastodon
-            </a>
-            <a class="column tile" href="https://www.minds.com/CodingOtaku" target="_blank">
-              <div class="image is-32x32">
-                <img src="/icons/minds.svg" alt="Minds Icon" />
-              </div><br>&nbsp;Minds
-            </a>
-            <a class="column tile" href="https://beta.lbry.tv/@codingotaku" target="_blank">
-              <div class="image is-64x64">
-                <img src="/icons/lbry.svg" alt="LBRY Icon" />
-              </div>&nbsp;LBRY
-            </a>
-          </div><br><br>
-          <div class="columns is-centered">
-            <div class="media">
-              <div class="media-left">
-                <a href="https://www.fsf.org/fb" class="image is-128x128" target="_blank">
-                  <img src="/icons/not-fd.svg" alt="Not f'd — you won't find me on Facebook">
-                </a>
-              </div>
-              Copy&nbsp;<a href=/icons/not-fd.svg class="has-text-link" target="_blank">this button</a>&nbsp;
-              to express your rejection of Facebook.
+      <div class="box has-text-centered">
+        <img src="/images/me.png" alt="Codingotaku Logo" width="100" />
+        <p class="text-white">The best way to get in touch with me is by using either of the e-mail address
+          below<br>
+          <a class="has-text-link" href="mailto:contact@codingotaku.com">contact@codingotaku.com</a><br>
+          <a class="has-text-link" href="mailto:codingotaku@member.fsf.org">codingotaku@member.fsf.org</a>
+        </p><br>
+        <p class="has-text-danger"> I respond to most messages if I can, but I can't guarantee a reply.</p><br>
+        XMPP Group : <strong>codingotaku@conference.member.fsf.org</strong><br><br>
+        <img src="https://static.fsf.org/nosvn/associate/crm/5009114.png"
+          alt="Free Software Foundation member since July 2020" width="200" />
+      </div>
+      <br>
+      <div class="box">
+        <h1 class="title  has-text-centered">You can also find me on</h1>
+        <h1 class="subtitle has-text-danger has-text-centered">↓</h1>
+        <br />
+        <div class="columns">
+          <a class="column tile" href="https://gitlab.com/codingotaku" target="_blank">
+            <div class="image is-64x64">
+              <img src="/icons/gitlab.svg" alt="GitLab Icon" />
+            </div>&nbsp;GitLab
+          </a>
+          <a class="column tile" href="https://github.com/codingotaku" target="_blank">
+            <div class="image is-64x64">
+              <img src="/icons/github.svg" alt="GitHub Icon" />
+            </div>&nbsp;GitHub
+          </a>
+          <a class="column tile" href="https://fosstodon.org/@CodingOtaku" target="_blank">
+            <div class="image is-64x64">
+              <img src="/icons/mastodon.svg" alt="Mastodon Icon" />
+            </div>&nbsp;Mastodon
+          </a>
+          <a class="column tile" href="https://www.minds.com/CodingOtaku" target="_blank">
+            <div class="image is-32x32">
+              <img src="/icons/minds.svg" alt="Minds Icon" />
+            </div><br>&nbsp;Minds
+          </a>
+          <a class="column tile" href="https://beta.lbry.tv/@codingotaku" target="_blank">
+            <div class="image is-64x64">
+              <img src="/icons/lbry.svg" alt="LBRY Icon" />
+            </div>&nbsp;LBRY
+          </a>
+        </div><br><br>
+        <div class="columns is-centered">
+          <div class="media">
+            <div class="media-left">
+              <a href="https://www.fsf.org/fb" class="image is-128x128" target="_blank">
+                <img src="/icons/not-fd.svg" alt="Not f'd — you won't find me on Facebook">
+              </a>
             </div>
+            Copy&nbsp;<a href=/icons/not-fd.svg class="has-text-link" target="_blank">this button</a>&nbsp;
+            to express your rejection of Facebook.
           </div>
         </div>
       </div>

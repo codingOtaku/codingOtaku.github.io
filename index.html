@@ -2,304 +2,388 @@
 <html>
 
 <head>
-    <title>Coding Otaku</title>
-    <meta charset='utf-8'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <title>Coding Otaku</title>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
 
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
 
-    <meta name="description" content="Coding tutorials and otaku contents!">
-    <meta name="author" content="Rahul Sivananda">
-    <meta name="keywords" content="HTML,CSS,XML,Java,Games,Otaku,Coding,Anime,Downloader,coding otaku,tutorials">
-    <meta name="yandex-verification" content="b7de651853cf02dd" />
-    <link href='/styles/framework.css' rel='stylesheet'>
-    <link href='/styles/main.css' rel='stylesheet'>
-
-    <link rel="icon" type="image/png" href="/images/me.png">
-
-    <script>
-        /*
-        @licstart  The following is the entire license notice for the
-        JavaScript code in this page.
-
-        Copyright (C) 2019  Rahul Sivananda
-
-        The JavaScript code in this page is free software: you can
-        redistribute it and/or modify it under the terms of the GNU
-        General Public License (GNU GPL) as published by the Free Software
-        Foundation, either version 3 of the License, or (at your option)
-        any later version.  The code is distributed WITHOUT ANY WARRANTY;
-        without even the implied warranty of MERCHANTABILITY or FITNESS
-        FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-        As additional permission under GNU GPL version 3 section 7, you
-        may distribute non-source (e.g., minimized or compacted) forms of
-        that code without the copy of the GNU GPL normally required by
-        section 4, provided you include this license notice and a URL
-        through which recipients can access the Corresponding Source.
-
-
-        @licend  The above is the entire license notice
-        for the JavaScript code in this page.
-        */
-    </script>
+  <meta name="description" content="Coding tutorials and otaku contents!">
+  <meta name="author" content="Rahul Sivananda">
+  <meta name="keywords" content="HTML,CSS,XML,Java,Games,Otaku,Coding,Anime,Downloader,coding otaku,tutorials">
+  <meta name="yandex-verification" content="b7de651853cf02dd" />
+  <link rel="stylesheet" href="/styles/bulma.min.css">
+  <link rel="icon" type="image/png" href="/images/me.png">
 </head>
 
-<body class="bg-dark">
-    <label id="show" for="show-menu" class="show-menu">
-        Menu
-        <div class="menu-bar">
-            <!-- hamburger menu-->
-            <div class="menu"></div>
-            <div class="menu"></div>
-            <div class="menu"></div>
+<body>
+  <style>
+    a[target="_blank"]:after { content: url('/icons/external-link-icon.png')}
+    @media screen and (max-width: 1023px) {
+      /* show mavbar-menu on screen less than 1024px */
+      #menu-toggle:checked ~ #navbar-coding-otaku { display: block; }
+  
+      /* make navbar-burger become cross on screen less than 1024px */
+      #menu-toggle:checked + .navbar-brand > label > span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+      #menu-toggle:checked + .navbar-brand > label > span:nth-child(2) { opacity: 0; }
+      #menu-toggle:checked + .navbar-brand > label > span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+      /* you can also replace + with ~ in above three rules and get the same result */
+    }
+  </style>
+  <section class="section">
+    <nav class="navbar is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
+      <input type="checkbox" id="menu-toggle" class="is-hidden">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/images/me.png">
+        </a>
+
+        <label for="menu-toggle" class="navbar-burger burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </label>
+      </div>
+      <div id="navbar-coding-otaku" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar">
+            <a class="navbar-item" href="#apps" area-labledby="show">Apps</a>
+            <a class="navbar-item" href="#apis">APIs</a>
+            <a class="navbar-item" href="#sources">Sources</a>
+            <a class="navbar-item" href="#donate">Donations</a>
+            <a class="navbar-item" href="https://blog.codingotaku.com" target="_blank" >Blogs</a>
+            <a class="navbar-item" href="#contact">Contact me!</a>
+          </div>
         </div>
-    </label>
-    <input type="checkbox" id="show-menu" role="button">
-    <ul id="menu">
-        <li>
-            <a href="/#">
-                <img alt="Logo" src="/images/me_nobg.png" class="img-responsive" style="width:55px;" />
-            </a>
-        </li>
-        <li>
-            <a href="#apps" area-labledby="show">Apps</a>
-        </li>
-        <li class="nav-item">
-            <a href="#apis">APIs</a>
-        </li>
-        <li class="nav-item">
-            <a href="#sources">Sources</a>
-        </li>
-        <li class="nav-item">
-            <a href="#donate">Donations</a>
-        </li>
-        <li class="nav-item">
-            <a href="https://blog.codingotaku.com">Blogs</a>
-        </li>
-        <li class="nav-item">
-            <a href="#contact">Contact me!</a>
-        </li>
-    </ul>
-    <div class="jumbotron jumbotron-fluid text-center bg-secondary text-white" style="margin-bottom:0">
-        <h1>Coding Otaku</h1>
-        <p>An Otaku who loves coding and Anime</p>
+      </div>
+  </section>
+  <session class="hero box">
+    <div class="container has-text-centered">
+      <p class="has-text-danger ">Be warned!</p>
+      Look back, go through your old source codes, you will always laugh at yourself for your horrible spaghetti
+      code.<br />
+      So I won't be looking back, they will haunt me.<br /><br />
+      <p class="has-text-danger has-text-bold">Proceed with caution!</p>
     </div>
-    <br />
-    <div class="jumbotron bg-dark text-center text-white">
-        <p class="text-danger">Be warned!</p>
-        Look back, go through your old source codes, you will always laugh at yourself for your horrible spaghetti
-        code.<br />
-        So I won't be looking back, they will haunt me.<br /><br />
-        <p class="text-danger font-weight-bold">Proceed with caution!</p>
-    </div>
+  </session>
+  <br>
 
-    <div class="jumbotron bg-dark text-white">
-        <u>
-            <h3 id="apps" class="text-center">Apps and fun!</h3>
-        </u>
-        <p class="text-center">Most of these are made with <span class="language">Java</span> or <span
-                class="language">JavaScript</span>.
-            I know other languages (<span class="language">C++</span>, <span class="language">C#</span>, <span
-                class="language">Python</span>, <span class="language">Haskell</span> etc..)<br>
-            But I haven't made any project with those yet in my <a class="text-warning"
-                href="https://github.com/codingotaku" target="_blank">GitHub</a> account</p>
-        <div class="list-group list-group-flush bg-dark">
-            <a href="Animu-Downloaderu/" class="list-group-item list-group-item-action bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">AnimuDownloaderu</h5>
-                    <p><span class="language">Java</span>, <span class="language">JavaFX</span>, <span
-                            class="language">OpenJDK</span></p>
-                </div>
-                <p class="mb-1">A Java based desktop app for downloading anime in batch.</p>
-            </a>
-            <div class="card-footer w-100"></div>
-            <a href="7-Segment-Digital-Matrix-Rain/" target="_blank"
-                class="list-group-item list-group-item-action  bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">7 Segment Matrix Rain</h5>
-                    <p><span class="language">JavaScript</span>, <span class="language">p5.js</span>, <span
-                            class="language">HTML</span></p>
-                </div>
-                <p class="mb-1">
-                    A clone of Metrix rain from the Movie replacing kathakana chars with 7 segment display<br>
-                    Inspired by @tomscott's video and @shiffman coding challenge
-                    #thisdot7segment and @emilyxxie guest tutorial from 2017</p>
-            </a>
-            <div class="card-footer w-100"></div>
-            <a href="LissajousFigures/" target="_blank"
-                class="list-group-item list-group-item-action  bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">LissajousFigures</h5>
-                    <p><span class="language">JavaScript</span>, <span class="language">p5.js</span>, <span
-                            class="language">HTML</span></p>
-                </div>
-                <p class="mb-1"> Lissajous Figures animation with p5.js</p>
-            </a>
-            <div class="card-footer w-100"></div>
-            <a href="Popup-Youtube-Updated/" class="list-group-item list-group-item-action bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">PopupYouTube</h5>
-                    <p><span class="language">Java</span>, <span class="language">JavaFX</span></p>
-                </div>
-                <p class="mb-1">Watch youtube playlists and videos without the annoying distractions and ads.</p>
-            </a>
-            <div class="card-footer w-100"></div>
-            <a href="Kurumi-Everywhere/" class="list-group-item list-group-item-action bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Kurumi-Everywhere</h5>
-                    <p><span class="language">JavaScript</span>, <span class="language">HTML</span></p>
-                </div>
-                <p class="mb-1">Firefox addon that Replaces all images in every websites to kawaii images of Tokisaki
-                    Kurumi.</p>
-            </a>
-            <div class="card-footer w-100"></div>
-            <a href="DinoClone/" target="_blank" class="list-group-item list-group-item-action bg-dark text-white">
-                <h5 class="mb-1">Dino Clone</h5>
-                <p><span class="language">JavaScript</span>, <span class="language">p5.js</span>, <span
-                        class="language">HTML</span></p>
-                <div class="d-flex w-100 justify-content-between">
-                </div>
-                <p class="mb-1">A silly buggy clone for Google chrome Dino Dash.</p>
-            </a>
-            <div class="card-footer w-100"></div>
-            <a href="Tic-Tac-Toe/" class="list-group-item list-group-item-action bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Tic-Tac-Toe</h5>
-                    <p><span class="language">JavaScript</span>, <span class="language">p5.js</span>, <span
-                            class="language">HTML</span></p>
-                </div>
-                <p class="mb-1">A simple Tic Tac Toe game to play on browser.
-                </p>
-            </a>
-            <div class="card-footer w-100"></div>
+  <section>
+    <div class="container is-fluid has-text-centered box">
+      <span class="hidden-title" id="apps"></span>
+      <h1 class="title">Apps and Fun!</h1>
+      <p class="text-center">Most of these are made with <span class="tag">Java</span> or <span
+          class="tag">JavaScript</span>.
+        I know other languages (<span class="tag">C++</span>, <span class="tag">C#</span>, <span
+          class="tag">Python</span>, <span class="tag">Haskell</span> etc..)<br>
+        But I haven't made any project with those yet in my <a class="has-text-link"
+          href="https://github.com/codingotaku" target="_blank">GitHub</a> account</p>
+      <div class="columns">
+        <div class="column is-4">
+          <a class="card box" href="Animu-Downloaderu/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apps/animu-downloaderu.jpg"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">Animu Downloaderu</span><br>
+                <span class="subtitle is-6">
+                  A Java based desktop app for downloading anime in batch!<br>
+                  <span class="tag">Java</span>
+                  <span class="tag">JavaFX</span>
+                  <span class="tag">OpenJDK</span>
+                </span>
+              </div>
+            </div>
+          </a>
         </div>
-    </div>
-
-    <div class="jumbotron bg-dark text-white">
-        <u>
-            <h3 id="apis" class="text-center">APIs and wrappers</h3>
-        </u>
-
-        <div class="list-group list-group-flush bg-dark">
-            <a href="JEdenManga/" class="list-group-item list-group-item-action bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">JEdenManga</h5>
-                    <p><span class="language">Java</span>, <span class="language">OpenJDK</span></p>
-                </div>
-                <p class="mb-1">A java wrapper for MangaEden API</p>
-            </a>
-            <div class="card-footer bg-dark w-100"></div>
-            <a href="AnimeCrawlerAPI/" class="list-group-item list-group-item-action bg-dark text-white">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">AnimeCrawlerAPI</h5>
-                    <p><span class="language">Java</span>, <span class="language">OpenJDK</span></p>
-                </div>
-                <p class="mb-1">A java crawling api for fetching anime details</p>
-            </a>
-            <div class="card-footer bg-dark w-100"></div>
+        <div class="column is-4">
+          <a class="card box" href="7-Segment-Digital-Matrix-Rain/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apps/7-segment-digital-matrix-rain.jpg"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">7 Segment Matrix Rain</span><br>
+                <span class="subtitle is-6">
+                  Replaced kathakana chars in Matrix rain with 7 segment digital display!<br>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">p5.js</span>
+                  <span class="tag">HTML</span>
+                </span>
+              </div>
+            </div>
+          </a>
         </div>
+        <div class="column is-4">
+          <a class="card box" href="LissajousFigures/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apps/lissajous-figures.jpg"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">Lissajous Figures</span><br>
+                <span class="subtitle is-6">Lissajous Figures animation with p5.js!<br>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">p5.js</span>
+                  <span class="tag">HTML</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-4">
+          <a class="card box" href="Popup-Youtube-Updated/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apps/popup-youtube-updated.jpg"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">PopupYouTube</span><br>
+                <span class="subtitle is-6">Watch youtube playlists and videos without the annoying distractions and
+                  ads.<br>
+                  <span class="tag">Java</span>
+                  <span class="tag">JavaFX</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-4">
+          <a class="card box" href="Kurumi-Everywhere/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apps/kurumi-everywhere.jpg"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">Kurumi Everywhere</span><br>
+                <span class="subtitle is-6">Firefox addon that Replaces all images in every websites to kawaii images of
+                  Tokisaki
+                  Kurumi.<br>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-4">
+          <a class="card box" href="DinoClone/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apps/dino-clone.jpg"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">Dino Clone</span><br>
+                <span class="subtitle is-6">A silly buggy clone of Google chrome's famous Dino Dash game (you need
+                  internet to load this game though :/).<br>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">p5.js</span>
+                  <span class="tag">HTML</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-4">
+          <a class="card box" href="Tic-Tac-Toe/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apps/tic-tac-toe.jpg"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">Tic-Tac-Toe</span><br>
+                <span class="subtitle is-6">A simple two person Tic-Tac-Toe game to play on browser.<br>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">p5.js</span>
+                  <span class="tag">HTML</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
+  </section><br>
+  <section>
+    <div class="container is-fluid has-text-centered box">
+      <span class="hidden-title" id="apis"></span>
+      <h1 class="title">APIs and wrappers</h1>
+      <div class="columns">
+        <div class="column is-4">
+          <a class="card box" href="JEdenManga/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apis/jedenmanga.png"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">JEdenManga</span><br>
+                <span class="subtitle is-6">A Java wrapper for mangaeden REST API.<br>
+                  <span class="tag">Java</span>
+                  <span class="tag">OpenJDK</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column is-4">
+          <a class="card box" href="AnimeCrawlerAPI/">
+            <div class="card-image">
+              <div class="image is-2by1"><img class="" src="/images/apis/anime-crawler-api.png"></div>
+            </div>
+            <div class="card-content">
+              <div class="content"><span class="subtitle">AnimeCrawlerAPI</span><br>
+                <span class="subtitle is-6">A hackable java API for fetching anime details by crawling websites.<br>
+                  <span class="tag">Java</span>
+                  <span class="tag">OpenJDK</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-
-
-    <div class="jumbotron bg-secondary text-center text-white">
-        <span id="sources"></span>
-        <br /><br /><br />
-        <h3 id="sources">Source code!</h3>
-        All source codes are FLOSS (Free/Libre and Open-Source Software! &hearts; ) and available on
-        <a class="text-warning" href="https://github.com/codingotaku" target="_blank">GitHub</a>
-        <br />
-        You can do whatever you want with them ;)
+  </section><br>
+  <section>
+    <div class="container is-fluid has-text-centered box">
+      <span class="hidden-title" id="sources"></span>
+      <h1 class="title">Source code!</h1>
+      <div class="columns is-centered">
+        <div class="column is-4">
+          <div class="card box notification is-success">
+            <div class="card-content">
+              <div class="content"><span class="subtitle is-6">All source codes are Free/Libre and Open-Source
+                  Software! ♥</span><br>
+                <span class="subtitle is-6">you can find them on
+                  <a href="https://github.com/codingotaku" class="has-text-link" target="_blank">GitHub</a>
+                  and on <a href="https://gitlab.com/codingotaku" class="has-text-link" target="_blank">GitLab</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-footer w-100"></div>
+  </section><br><br>
+  <section>
+    <div class="container is-fluid has-text-centered box">
+      <span class="hidden-title" id="donate"></span>
+      <h1 class="title">Donations</h1>
 
-    <div class="jumbotron bg-dark text-center text-white">
-        <span id="donate"></span>
-        <br /><br /><br />
-        <h3>Donations</h3>
-        <section>
-            Everything I do is free, but I will leave these here anyway <br /><br />
-            <div class="text-center">
-                <a class='liberapay_link' href="https://liberapay.com/codingotaku/donate" target="_blank"
-                    class="text-white">
+      <div class="columns is-centered">
+        <div class="column is-4">
+          <div class="card box notification">
+            <div class="card-content">
+              <div class="content">
+                <span class="subtitle is-6"> Everything I do is
+                  <a href="https://www.gnu.org/philosophy/free-sw.html" class="has-text-link" target="_blank">Free</a>,
+                  but I will leave these here anyway</span>
+                <br><br>
+                <div class="columns has-text-centered">
+                  <a href="https://liberapay.com/codingotaku/donate" target="_blank" class="column">
                     <img alt="Donate using Liberapay" src="/icons/liberapay_donate.svg">
-                </a><br><br>
-                <a class="paypal_link" href="https://paypal.me/codingotaku" target="_blank">
+                  </a>
+                  <a href="https://paypal.me/codingotaku" target="_blank" class="column">
                     <img src="/icons/paypal_donate.gif" title="PayPal - The safer, easier way to pay online!"
-                        alt="Donate with PayPal button" />
-                </a><br><br>
-                <a class="patreon_link" href="https://www.patreon.com/bePatron?u=13678963" target="_blank">
+                      alt="Donate with PayPal button" />
+                  </a>
+                  <a href="https://www.patreon.com/bePatron?u=13678963" target="_blank" class="column">
                     <svg width="15" height="15" viewBox="0 0 569 546">
-                        <g>
-                            <circle data-fill="1" id="Oval" cx="362" cy="204" r="204"></circle>
-                            <rect data-fill="2" id="Rectangle" x="0" y="0" width="100" height="545"></rect>
-                        </g>
+                      <g>
+                        <circle data-fill="1" id="Oval" cx="362" cy="204" r="204"></circle>
+                        <rect data-fill="2" id="Rectangle" x="0" y="0" width="100" height="545"></rect>
+                      </g>
                     </svg> Patron
-                </a>
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
-    </div>
-    <div class="card-footer w-100"></div>
-
-    <div class="jumbotron bg-dark text-center text-white">
-        <h3 id="contact"></h3>
-        <section>
-            <div class="jumbotron jumbotron-fluid bg-dark text-white text-center">
-                <img src="/images/me.png" alt="Codingotaku Logo" width="100" />
-                <p class="text-white">The best way to get in touch with me is by using either of the e-mail address
-                    below<br>
-                    <a class="text-warning" href="mailto:contact@codingotaku.com">contact@codingotaku.com</a><br>
-                    <a class="text-warning" href="mailto:codingotaku@member.fsf.org">codingotaku@member.fsf.org</a>
-                </p><br>
-                XMPP Group : <strong>codingotaku@conference.member.fsf.org</strong><br><br>
-                <p class="text-danger"> I respond to most messages if I can, but I can't guarantee a reply.</p>
-                <img src="https://static.fsf.org/nosvn/associate/crm/5009114.png"
-                    alt="Free Software Foundation member since July 2020" width="200" />
-            </div>
-
-            <div class=" text-left bg-dark text-white">
-                <h4 class="text-center">You can also follow me on</h4>
-                <p class="text-danger text-center">↓</p>
-                <br />
-                <footer>
-                    <div class="text-center">
-                        <a href="https://github.com/codingotaku" target="_blank">
-                            <img src="icons/github.svg" height=25em alt="GitHub Icon" /> GitHub
-                        </a>
-                        <a rel="me" href="https://fosstodon.org/@CodingOtaku" target="_blank">
-                            <img src="icons/mastodon.svg" height=25em alt="Mastodon Icon" /> Mastodon
-                        </a>
-                        <a href="https://www.minds.com/CodingOtaku" target="_blank">
-                            <img src="icons/minds.svg" height=25em alt="Minds Icon" /> Minds
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a href="https://beta.lbry.tv/@codingotaku" target="_blank">
-                            <img src="icons/lbry.svg" height=25em alt="LBRY Icon" /> LBRY
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a href="https://www.wattpad.com/user/CodingOtaku" target="_blank">
-                            <img src="icons/wattpad.svg" height=25em alt="Wattpad Icon" /> Wattpad
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCrCgykG-bfmB4SpOKV79fhA" target="_blank">
-                            <img src="icons/youtube.svg" height=25em alt="Youtube icon" /> YouTube
-                        </a>
-                    </div>
-                </footer>
-            </div>
-        </section>
-        <br>
-        <div>
-            <a href="https://www.fsf.org/fb" target="_blank" class="text-white">
-                <img src="/icons/not-fd.svg" height="60em" alt="not f'd - You won't find me on Facebook">
-                &nbsp;Copy <a href="/icons/not-fd.svg">this button</a> to express your rejection of
-                Facebook.<br />
-            </a>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
+  <br><br>
+  <session>
+    <div class="container is-fluid has-text-centered box">
+      <span class="hidden-title" id="contact"></span>
+      <h1 class="title">Contact Me!</h1>
+      <div class="container is-fluid">
+        <div class="box has-text-centered">
+          <img src="/images/me.png" alt="Codingotaku Logo" width="100" />
+          <p class="text-white">The best way to get in touch with me is by using either of the e-mail address
+            below<br>
+            <a class="has-text-link" href="mailto:contact@codingotaku.com">contact@codingotaku.com</a><br>
+            <a class="has-text-link" href="mailto:codingotaku@member.fsf.org">codingotaku@member.fsf.org</a>
+          </p><br>
+          <p class="has-text-danger"> I respond to most messages if I can, but I can't guarantee a reply.</p><br>
+          XMPP Group : <strong>codingotaku@conference.member.fsf.org</strong><br><br>
+          <img src="https://static.fsf.org/nosvn/associate/crm/5009114.png"
+            alt="Free Software Foundation member since July 2020" width="200" />
+        </div>
+        <br>
+        <div class="box">
+          <h1 class="title  has-text-centered">You can also find me on</h1>
+          <h1 class="subtitle has-text-danger has-text-centered">↓</h1>
+          <br />
+          <div class="columns">
+            <a class="column tile" href="https://gitlab.com/codingotaku" target="_blank">
+              <div class="image is-64x64">
+                <img src="/icons/gitlab.svg" alt="GitLab Icon" />
+              </div>&nbsp;GitLab
+            </a>
+            <a class="column tile" href="https://github.com/codingotaku" target="_blank">
+              <div class="image is-64x64">
+                <img src="/icons/github.svg" alt="GitHub Icon" />
+              </div>&nbsp;GitHub
+            </a>
+            <a class="column tile" href="https://fosstodon.org/@CodingOtaku" target="_blank">
+              <div class="image is-64x64">
+                <img src="/icons/mastodon.svg" alt="Mastodon Icon" />
+              </div>&nbsp;Mastodon
+            </a>
+            <a class="column tile" href="https://www.minds.com/CodingOtaku" target="_blank">
+              <div class="image is-32x32">
+                <img src="/icons/minds.svg" alt="Minds Icon" />
+              </div><br>&nbsp;Minds
+            </a>
+            <a class="column tile" href="https://beta.lbry.tv/@codingotaku" target="_blank">
+              <div class="image is-64x64">
+                <img src="/icons/lbry.svg" alt="LBRY Icon" />
+              </div>&nbsp;LBRY
+            </a>
+          </div><br><br>
+          <div class="columns is-centered">
+            <div class="media">
+              <div class="media-left">
+                <a href="https://www.fsf.org/fb" class="image is-128x128" target="_blank">
+                  <img src="/icons/not-fd.svg" alt="Not f'd — you won't find me on Facebook">
+                </a>
+              </div>
+              Copy&nbsp;<a href=/icons/not-fd.svg class="has-text-link" target="_blank">this button</a>&nbsp;
+              to express your rejection of Facebook.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </session>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>This blog is made by</strong> <a href="https://codingotaku.com">Coding Otaku</a>. The source code is
+        licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+    <a rel="me" href="https://fosstodon.org/@CodingOtaku"></a>
+  </footer>
+  <style>
+    .hidden-title {
+      display: block !important;
+      position: relative !important;
+      top: -250px !important;
+      visibility: hidden !important;
+    }
+  </style>
 </body>
 
 </html>

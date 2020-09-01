@@ -15,31 +15,49 @@
     <link rel="stylesheet" href="/styles/bulma.min.css">
     <link rel="icon" type="image/png" href="/images/me.png">
     <style>
-        @media
-only screen and (max-width: 1500px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  tr {
-    border: 1px solid #999;
-    margin-bottom: 1em;
-  }
-  td {
-    border: none !important;
-    position: relative;
-  }
-}
+        @media screen and (max-width: 1500px) {
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #999;
+                margin-bottom: 1em;
+            }
+
+            td {
+                border: none !important;
+                position: relative;
+            }
+
+            td:nth-of-type(1) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 1500px) {
+            td:nth-of-type(1) {
+                width: 10em;
+            }
+        }
     </style>
 </head>
 
 <body>
     <section class="section">
-        <div class="container">
+        <div class="container is-fluid">
             <div class="columns">
                 <div class="column is-3 has-background-dark ">
                     <div class="notification has-background-dark has-text-white">
@@ -102,7 +120,7 @@ only screen and (max-width: 1500px) {
                                 <p class="card-header-title has-text-white">
                                     OCAJP 8
                                 </p>
-                                    <time class="card-header-icon" datetime="2017-09-16">16 Sep 2017</time>
+                                <time class="card-header-icon" datetime="2017-09-16">16 Sep 2017</time>
                             </header>
                             <div class="card-content">
                                 <div class="content">
@@ -185,14 +203,14 @@ only screen and (max-width: 1500px) {
                     <span class="button is-inverted is-outlined is-large is-fullwidth">Contact</span><br>
                     <div class="has-text-centered columns is-0 is-variable">
 
-                        <span class="column">📧 <a href="mailto:rahul@codingotaku.com"
+                        <span class="column">&#x1F4E7; <a href="mailto:rahul@codingotaku.com"
                                 class="has-text-link">rahul@codingotaku.com</a>
                         </span>
 
-                        <span class="column">🌍 <a href="https://codingotaku.com"
+                        <span class="column">&#x1F30D; <a href="https://codingotaku.com"
                                 class="has-text-link">codingotaku.com</a>
                         </span>
-                        <span class="column">🌐 <a href="https://blog.codingotaku.com"
+                        <span class="column">&#x1F310; <a href="https://blog.codingotaku.com"
                                 class="has-text-link">blog.codingotaku.com</a>
                         </span>
                     </div>
@@ -359,7 +377,7 @@ only screen and (max-width: 1500px) {
                     <a href="https://github.com/codingotaku/multivnc" class="has-text-link">multivnc</a>, and others. I
                     usually end up making my own version of it for personal use.<br>
                     I also make simple games, create firefox extentions for fun.
-
+                    <br><br>
                     <span class="button is-inverted is-outlined is-large is-fullwidth">Education</span><br>
                     <div class="card">
                         <header class="card-header">

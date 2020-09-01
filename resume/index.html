@@ -14,6 +14,27 @@
     <meta name="keywords" content="resume">
     <link rel="stylesheet" href="/styles/bulma.min.css">
     <link rel="icon" type="image/png" href="/images/me.png">
+    <style>
+        @media
+only screen and (max-width: 1500px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #999;
+    margin-bottom: 1em;
+  }
+  td {
+    border: none !important;
+    position: relative;
+  }
+}
+    </style>
 </head>
 
 <body>
@@ -160,7 +181,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="column ml-3">
+                <div class="column">
                     <span class="button is-inverted is-outlined is-large is-fullwidth">Contact</span><br>
                     <div class="has-text-centered columns is-0 is-variable">
 
@@ -226,11 +247,10 @@
                     <br><span class="button is-inverted is-outlined is-large is-fullwidth">Hobby Projects</span><br>
                     <h3 class="subtitle">Websites</h3>
                     <div class="content">
-                        <table class="table">
+                        <table class="table is-fullwidth">
                             <thead>
                                 <tr>
                                     <th>Project</th>
-                                    <th>Status</th>
                                     <th>Source</th>
                                     <th>Description</th>
                                 </tr>
@@ -239,7 +259,6 @@
                                 <tr>
                                     <td><a href="https://codingotaku.com" class="has-text-link">codingotaku.com</a>
                                     </td>
-                                    <td>Active</td>
                                     <td><a href="https://github.com/codingotaku/codingotaku.github.io"
                                             class="has-text-link">GitHub</a></td>
                                     <td>A javascript-free personal website with Bulma css framework.</td>
@@ -248,7 +267,6 @@
                                 <tr>
                                     <td><a href="https://blog.codingotaku.com"
                                             class="has-text-link">blog.codingotaku.com</a></td>
-                                    <td>Active</td>
                                     <td><a href="https://github.com/codingotaku/blog" class="has-text-link">GitHub</a>
                                     </td>
                                     <td>Blog using VanilaJS and bulma css framework.</td>
@@ -256,7 +274,6 @@
                                 <tr>
                                     <td><a href="https://codingotaku.com/desktop"
                                             class="has-text-link">codingotaku.com/desktop</a></td>
-                                    <td>Ongoing</td>
                                     <td><a href="https://github.com/codingotaku/desktop"
                                             class="has-text-link">GitHub</a></td>
                                     <td>A website that looks and works almost like a desktop, uses dependency-free
@@ -265,7 +282,6 @@
 
                                 <tr>
                                     <td><a href="https://exeami.com" class="has-text-link">exeami.com</a></td>
-                                    <td>Ongoing</td>
                                     <td><a href="https://github.com/AmithaLingala/amithalingala.github.io"
                                             class="has-text-link">GitHub</a></td>
                                     <td>Another website I helped develop that looks and works like a desktop, made
@@ -277,11 +293,10 @@
                     </div>
                     <h3 class="subtitle">APIs</h3>
                     <div class="content">
-                        <table class="table">
+                        <table class="table is-fullwidth">
                             <thead>
                                 <tr>
                                     <th>Project</th>
-                                    <th>Status</th>
                                     <th>Source</th>
                                     <th>Description</th>
                                 </tr>
@@ -289,7 +304,6 @@
                             <tbody>
                                 <tr>
                                     <td>AnimeCrawlerAPI</td>
-                                    <td>Active</td>
                                     <td><a href="https://github.com/codingotaku/AnimeCrawlerAPI"
                                             class="has-text-link">GitHub</a></td>
                                     <td>A java based hackable Anime crawler API with multiple server support.</td>
@@ -297,7 +311,6 @@
 
                                 <tr>
                                     <td>JEdenManga</td>
-                                    <td>Active</td>
                                     <td><a href="https://github.com/codingotaku/JEdenManga"
                                             class="has-text-link">GitHub</a></td>
                                     <td>An unofficial MangaEden API client wrapper with java.</td>
@@ -307,11 +320,10 @@
                     </div>
                     <h3 class="subtitle">Desktop Apps</h3>
                     <div class="content">
-                        <table class="table">
+                        <table class="table is-fullwidth">
                             <thead>
                                 <tr>
                                     <th>Project</th>
-                                    <th>Status</th>
                                     <th>Source</th>
                                     <th>Description</th>
                                 </tr>
@@ -319,7 +331,6 @@
                             <tbody>
                                 <tr>
                                     <td>Animu-Downloaderu</td>
-                                    <td>Archived</td>
                                     <td><a href="https://github.com/codingotaku/Animu-Downloaderu"
                                             class="has-text-link">GitHub</a></td>
                                     <td>A JavaFX based desktop app to download anime in batch from multiple
@@ -328,7 +339,6 @@
                                 </tr>
                                 <tr>
                                     <td>Popup YouTube</td>
-                                    <td>Archived</td>
                                     <td><a href="https://github.com/codingotaku/Popup-Youtube-Updated"
                                             class="has-text-link">GitHub</a></td>
                                     <td>A JavaFX based desktop app to watch youtube videos in a popup window without
@@ -336,7 +346,6 @@
                                 </tr>
                                 <tr>
                                     <td>Manga Viewer</td>
-                                    <td>Archived</td>
                                     <td><a href="https://github.com/codingotaku/Manga-Viewer"
                                             class="has-text-link">GitHub</a></td>
                                     <td>A java based desktop app to read manga.</td>

@@ -52,6 +52,10 @@
                 width: 10em;
             }
         }
+
+        td:nth-of-type(1) {
+            width: 10em;
+        }
     </style>
 </head>
 
@@ -59,27 +63,24 @@
     <section class="section">
         <div class="container is-fluid">
             <div class="columns">
-                <div class="column is-3 has-background-dark ">
-                    <div class="notification has-background-dark has-text-white">
-                        <h1 class="title">Rahul S</h1>
-                        <h3 class="subtitle">Frontend Developer</h3>
+                <div class="column is-4 has-background-dark">
+                    <div class="has-background-dark">
+                        <h1 class="title  has-text-white">Rahul S</h1>
+                        <h3 class="subtitle  has-text-white">Frontend Developer</h3>
+                    </div><br>
+                    <div class="has-text-white has-text-left">
+                        <span class="button is-dark is-inverted is-outlined is-small is-fullwidth"><img src="/icons/resume-icons/contact.svg" width="20em">&nbsp;&nbsp;CONTACT</span><br>
+                        <span><a href="mailto:rahul@codingotaku.com" class="has-text-white">rahul@codingotaku.com</a>
+                        </span><br>
+                        <span><a href="https://codingotaku.com" class="has-text-white">codingotaku.com</a>
+                        </span><br>
+                        <span><a href="https://blog.codingotaku.com" class="has-text-white">blog.codingotaku.com</a>
+                        </span>
                     </div>
-                    <div class="has-text-white">
-                        <span class="button is-dark is-inverted is-outlined is-small is-fullwidth">PROFILE</span><br>
-                        <div class="card has-background-grey-dark has-text-white">
-                            <div class="card-content">
-                                <div class="content">
-                                    FOSS Enthusiast with 6 years of industry experience. I am interested in Federated
-                                    Networks,
-                                    Security, Privacy, and everything else in
-                                    its orbit.
-                                </div>
-                            </div>
-                        </div>
-                    </div><br><br>
+                    <br>
                     <div>
                         <span
-                            class="button is-dark is-inverted is-outlined is-small is-fullwidth">ACHIEVEMENTS</span><br>
+                            class="button is-dark is-inverted is-outlined is-small is-fullwidth"><img src="/icons/resume-icons/achievement.svg" width="20em">&nbsp;ACHIEVEMENTS</span><br>
                         <div class="card has-background-grey-dark has-text-white">
                             <header class="card-header">
                                 <p class="card-header-title has-text-white">
@@ -151,9 +152,9 @@
                             </footer>
                         </div>
                     </div>
-                    <br><br>
+                    <br>
                     <div>
-                        <span class="button is-dark is-inverted is-outlined is-small is-fullwidth">TECH
+                        <span class="button is-dark is-inverted is-outlined is-small is-fullwidth"><img src="/icons/resume-icons/tech.svg" width="20em">&nbsp;TECH
                             SKILLS</span><br>
                         <table class="table is-fullwidth has-background-grey-dark has-text-white">
                             <tr>
@@ -197,25 +198,47 @@
                                 <td><progress class="progress is-link" value="50" max="100">50%</progress></td>
                             </tr>
                         </table>
+                    </div><br>
+                    <span class="button is-dark is-inverted is-outlined is-small is-fullwidth"><img src="/icons/resume-icons/education.svg" width="20em">&nbsp;Education</span><br>
+                    <div class="card has-background-grey-dark has-text-white">
+                        <header class="card-header">
+                            <p class="card-header-title has-text-white">
+                                NTTF
+                            </p>
+                            <span class="card-header-icon">2011 – 2014</span>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                Diploma in Information Technology
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <span class="card-footer-item">First Class with Distinction</span>
+                        </footer>
                     </div>
                 </div>
                 <div class="column">
-                    <span class="button is-inverted is-outlined is-large is-fullwidth">Contact</span><br>
-                    <div class="has-text-centered columns is-0 is-variable">
+                    <div>
+                        <span class="button is-inverted is-outlined is-large is-fullwidth"><img src="/icons/resume-icons/profile.svg" width="20em">&nbsp;PROFILE</span><br>
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    FOSS Enthusiast with 6 years of industry experience. I am interested in Federated
+                                    Networks,
+                                    Security, Privacy, and everything else in
+                                    its orbit.
+                                    I try to contribute to other FOSS projects like
+                                    <a href="https://github.com/codingotaku/isso" class="has-text-link">isso</a>,
+                                    <a href="https://github.com/codingotaku/multivnc"
+                                        class="has-text-link">multivnc</a>, and others. I
+                                    usually end up making my own version of it for personal use.
+                                    I also make simple games, create firefox extentions for fun.
 
-                        <span class="column">&#x1F4E7; <a href="mailto:rahul@codingotaku.com"
-                                class="has-text-link">rahul@codingotaku.com</a>
-                        </span>
-
-                        <span class="column">&#x1F30D; <a href="https://codingotaku.com"
-                                class="has-text-link">codingotaku.com</a>
-                        </span>
-                        <span class="column">&#x1F310; <a href="https://blog.codingotaku.com"
-                                class="has-text-link">blog.codingotaku.com</a>
-                        </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <span class="button is-inverted is-outlined is-large is-fullwidth">Work Experience</span><br>
+                    <span class="button is-inverted is-outlined is-large is-fullwidth"><img src="/icons/resume-icons/work.svg">&nbsp;Work Experience</span><br>
                     <span class="title is-4"><strong>Software Engineer</strong></span> | 11/2017 – Present<br>
                     <h3 class="subtitle is-6">Hewlett Packard Inc. Bangalore, Karnataka, India</h3>
                     <div class="ml-3 content">
@@ -234,11 +257,10 @@
                             </li>
                             <li>Developed several apps with JavaFx and Printer SDKs</li>
                         </ul>
-                        <br>
                     </div>
-                    <span class="title is-5"><strong>Software Engineer</strong></span> | 03/2014 – 11/2017<br>
+                    <span class="title is-4"><strong>Software Engineer</strong></span> | 03/2014 – 11/2017<br>
                     <h3 class="subtitle is-6">Samsung R&D institute PVT. LTD., Bangalore, Karnataka, India</h3>
-                    <div class="content">
+                    <div class="ml-3 content">
                         Part of Automation testing team for several products.
                         <ul>
                             <li>
@@ -262,8 +284,8 @@
                             </li>
                             </dl>
                     </div>
-                    <br><span class="button is-inverted is-outlined is-large is-fullwidth">Hobby Projects</span><br>
-                    <h3 class="subtitle">Websites</h3>
+                    <br><span class="button is-inverted is-outlined is-large is-fullwidth"><img src="/icons/resume-icons/hobby.svg" width="20em">&nbsp;Hobby Projects</span><br>
+                    <span class="subtitle is-6"><b>Websites</b></span>
                     <div class="content">
                         <table class="table is-fullwidth">
                             <thead>
@@ -290,6 +312,14 @@
                                     <td>Blog using VanilaJS and bulma css framework.</td>
                                 </tr>
                                 <tr>
+                                    <td><span>flib</span>
+                                    </td>
+                                    <td><a href="https://github.com/codingotaku/flib-ui"
+                                            class="has-text-link">GitHub</a></td>
+                                    <td>A work in progress website as a Free (as in freedom) alternative to Wattpad
+                                        written with Vue.Js and Buefy</td>
+                                </tr>
+                                <tr>
                                     <td><a href="https://codingotaku.com/desktop"
                                             class="has-text-link">codingotaku.com/desktop</a></td>
                                     <td><a href="https://github.com/codingotaku/desktop"
@@ -309,7 +339,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <h3 class="subtitle">APIs</h3>
+                    <span class="subtitle is-6"><b>APIs</b></span>
                     <div class="content">
                         <table class="table is-fullwidth">
                             <thead>
@@ -333,10 +363,20 @@
                                             class="has-text-link">GitHub</a></td>
                                     <td>An unofficial MangaEden API client wrapper with java.</td>
                                 </tr>
+
+                                <tr>
+                                    <td><span>flib-api</span>
+                                    </td>
+                                    <td><a href="https://github.com/codingotaku/flib-api"
+                                            class="has-text-link">GitHub</a></td>
+                                    <td>A workin progress backend for <a href="https://github.com/codingotaku/flib-ui"
+                                            class="hastext-link">flib-ui</a> written in NodeJs, ExpressJs, and MySQL
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
-                    <h3 class="subtitle">Desktop Apps</h3>
+                    <span class="subtitle is-6"><b>Desktop Apps</b></span>
                     <div class="content">
                         <table class="table is-fullwidth">
                             <thead>
@@ -356,13 +396,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Popup YouTube</td>
-                                    <td><a href="https://github.com/codingotaku/Popup-Youtube-Updated"
-                                            class="has-text-link">GitHub</a></td>
-                                    <td>A JavaFX based desktop app to watch youtube videos in a popup window without
-                                        ads.</td>
-                                </tr>
-                                <tr>
                                     <td>Manga Viewer</td>
                                     <td><a href="https://github.com/codingotaku/Manga-Viewer"
                                             class="has-text-link">GitHub</a></td>
@@ -370,30 +403,6 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <h3 class="subtitle">Others</h3>
-                    I try to contribute to other FOSS projects like
-                    <a href="https://github.com/codingotaku/isso" class="has-text-link">isso</a>,
-                    <a href="https://github.com/codingotaku/multivnc" class="has-text-link">multivnc</a>, and others. I
-                    usually end up making my own version of it for personal use.<br>
-                    I also make simple games, create firefox extentions for fun.
-                    <br><br>
-                    <span class="button is-inverted is-outlined is-large is-fullwidth">Education</span><br>
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                NTTF (Nettur Technical Training Foundation)
-                            </p>
-                            <span class="card-header-icon">2011 – 2014</span>
-                        </header>
-                        <div class="card-content">
-                            <div class="content">
-                                Diploma in Information Technology
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <span class="card-footer-item">First Class with Distinction</span>
-                        </footer>
                     </div>
                 </div>
             </div>

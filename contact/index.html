@@ -24,48 +24,13 @@
             background-color: #363636;
         }
 
-        /* Bulma bug workaround start*/
         .columns .card:nth-child(2) {
             margin-left: 0.5em;
             margin-right: 0.5em;
         }
 
-        .columns .column:last-child {
-            margin-bottom: 1.5em;
-        }
-
-        .columns a:hover {
-            background-color: #626262 !important;
-            z-index: 2;
-            transform: scale(1.01, 1.01);
-            box-shadow: 5px 5px 8px #424242;
-        }
-
-        /* Bulma bug workaround end*/
-
-
-        /* Mobile view customizations */
-        @media screen and (max-width: 728px) {
-
-            .columns a {
-                width: 100% !important;
-            }
-        }
-
         /* Tablet view customizations */
         @media screen and (max-width: 1023px) {
-
-            /* Remove the bulma workarounds (not required in mobile view) */
-            .columns a:hover {
-                transform: scale(1, 1);
-            }
-
-            .columns a {
-                width: 30%;
-            }
-
-            /* Bulma bug workaround remove end*/
-
             /* show mavbar-menu on screen less than 1024px */
             #menu-toggle:checked~#navbar-coding-otaku {
                 display: block;
@@ -124,67 +89,56 @@
     <section class="hero is-dark title-bg">
         <div class="hero-body">
             <div class="container has-text-centered is-dark">
-                <h1 class="title">Coding Otaku's Website</h1>
-                <h2 class="subtitle">
-                    This is my webpage. I am cleaning some stuff up and making it a simpler page.</h2>
+                <h1 class="title">Contact Me!</h1>
+                <h2 class="subtitle"> Some API and wrapper projects.</h2>
             </div>
         </div>
     </section>
-    <section class="container is-fluid has-text-centered has-text-white">
-        <img src="/images/me.svg" width="100px" alt="Coding Otaku Logo"> <br><br>
-        I'm a full-stack web de­vel­oper with an in­ter­est in FOSS, stan­dards, se­man­tics, and good user
-        ex­pe­ri­ences. I'm
-        cur­rently ex­plor­ing minimalism in my work.
-        <br><br><br><br>
-    </section>
     <section class="container is-fluid">
-        <div class="columns is-centered">
-            <a class="column is-3 card box has-background-grey-dark has-text-white" href="/web">
-                <div class="card-image">
-                    <div class="image is-2by1"><img class="" src="/images/apps/lissajous-figures.jpg"></div>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <span class="subtitle has-text-white">Web Development</span><br>
-                        <span class="subtitle has-text-white is-6">My Web related projects<br><br>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">p5.js</span>
-                            <span class="tag">HTML</span>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <a class="column is-3 card box has-background-grey-dark has-text-white" href="/desktop">
-                <div class="card-image">
-                    <div class="image is-2by1"><img class="" src="/images/apps/animu-downloaderu.jpg"></div>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <span class="subtitle has-text-white">App Development</span><br>
-                        <span class="subtitle has-text-white is-6">Desktop app developement<br><br>
-                            <span class="tag">CSS</span>
-                            <span class="tag">Java</span>
-                            <span class="tag">OpenJFX</span>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <a class="column is-3 card box has-background-grey-dark has-text-white" href="/api">
-                <div class="card-image">
-                    <div class="image is-2by1"><img class="" src="/images/apis/jedenmanga.png"></div>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <span class="subtitle has-text-white">APIs and wrappers</span><br>
-                        <span class="subtitle has-text-white is-6">Some API and wrapper projects<br><br>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">REST</span>
-                            <span class="tag">Java</span>
-                        </span>
-                    </div>
-                </div>
-            </a>
+        <div class="box has-background-grey-dark has-text-white has-text-centered">
+            <img src="/images/me.svg" alt="Codingotaku Logo" width="200" />
+            <p class="text-white">The best way to get in touch with me is by using either of the e-mail address
+                below<br>
+                <a class="has-text-link" href="mailto:contact@codingotaku.com">contact@codingotaku.com</a><br>
+                <a class="has-text-link" href="mailto:codingotaku@member.fsf.org">codingotaku@member.fsf.org</a>
+            </p><br>
+            <p class="has-text-danger"> I respond to most messages if I can, but I can't guarantee a reply.</p><br>
+            XMPP Group : <strong class="has-text-link">codingotaku@conference.member.fsf.org</strong><br><br>
+            <img src="https://static.fsf.org/nosvn/associate/crm/5009114.png"
+                alt="Free Software Foundation member since July 2020" width="200" />
+        </div>
+        <br>
+        <div class="box has-background-grey-dark has-text-white">
+            <h1 class="title has-text-centered has-text-white">You can also find me on</h1>
+            <h1 class="subtitle has-text-danger has-text-centered">↓</h1>
+            <br />
+            <div class="columns is-centered">
+                <span class="column is-2"></span>
+                <a class="column is-flex is-2 is-justify-content-center" href="https://gitlab.com/codingotaku" target="_blank">
+                    <span class="image is-64x64 has-text-centered">
+                        <img src="/icons/gitlab.svg" alt="GitLab Icon" /> GitLab
+                    </span>
+                </a>
+                <a class="column is-flex is-2 is-justify-content-center is-2" href="https://github.com/codingotaku" target="_blank">
+                    <span class="image is-64x64 has-text-centered">
+                        <img src="/icons/github.svg" alt="GitHub Icon" /> GitHub
+                    </span>
+                </a>
+                <a class="column is-flex is-2 is-justify-content-center is-2" href="https://fosstodon.org/@CodingOtaku" target="_blank">
+                    <span class="image is-64x64 has-text-centered">
+                        <img src="/icons/mastodon.svg" alt="Mastodon Icon" /> Mastodon
+                    </span>
+                </a>
+                <span class="column is-2"></span>
+            </div><br>
+            <div class="columns is-centered">
+                <a href="https://www.fsf.org/fb" class="column is-2 has-text-danger" target="_blank">
+                    <span class="image has-text-centered">
+                        <img src="/icons/not-fd.svg" alt="Not f'd — you won't find me on Facebook">
+                    </span>
+                </a>
+            </div>
+            <br><br>
         </div>
     </section><br><br>
     <footer class="footer has-background-grey-dark">

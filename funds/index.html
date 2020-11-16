@@ -14,88 +14,8 @@
     <meta name="keywords" content="HTML,CSS,XML,Java,Games,Otaku,Coding,Anime,Downloader,coding otaku,tutorials">
     <meta name="yandex-verification" content="b7de651853cf02dd" />
     <link rel="stylesheet" href="/styles/bulma.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <link rel="icon" type="image/png" href="/images/me.svg">
-    <style>
-        html,
-        body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #363636;
-        }
-
-        /* Bulma bug workaround start*/
-        .columns .card:nth-child(2) {
-            margin-left: 0.5em;
-            margin-right: 0.5em;
-        }
-
-        .columns .column:last-child {
-            margin-bottom: 1.5em;
-        }
-
-        .columns a:hover {
-            background-color: #626262 !important;
-            z-index: 2;
-            transform: scale(1.01, 1.01);
-            box-shadow: 5px 5px 8px #424242;
-        }
-
-        /* Bulma bug workaround end*/
-
-
-        /* Mobile view customizations */
-        @media screen and (max-width: 728px) {
-
-            .columns a {
-                width: 100% !important;
-            }
-        }
-
-        /* Tablet view customizations */
-        @media screen and (max-width: 1023px) {
-
-            /* Remove the bulma workarounds (not required in mobile view) */
-            .columns a:hover {
-                transform: scale(1, 1);
-            }
-
-            .columns a {
-                width: 30%;
-            }
-
-            /* Bulma bug workaround remove end*/
-
-            /* show mavbar-menu on screen less than 1024px */
-            #menu-toggle:checked~#navbar-coding-otaku {
-                display: block;
-                background-color: #323232;
-                box-shadow: 5px 5px 8px #424242;
-            }
-
-            #menu-toggle:checked~#navbar-coding-otaku .navbar-end .navbar-item {
-                color: #ffffff;
-            }
-
-
-            #menu-toggle:checked~#navbar-coding-otaku .navbar-end .navbar-item:hover {
-                background-color: #262626;
-            }
-
-            /* make navbar-burger become cross on screen less than 1024px */
-            #menu-toggle:checked+.navbar-brand>label>span:nth-child(1) {
-                transform: translateY(5px) rotate(45deg);
-            }
-
-            #menu-toggle:checked+.navbar-brand>label>span:nth-child(2) {
-                opacity: 0;
-            }
-
-            #menu-toggle:checked+.navbar-brand>label>span:nth-child(3) {
-                transform: translateY(-5px) rotate(-45deg);
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -135,23 +55,25 @@
     </section>
     <section class="container is-fluid">
         <div class="columns is-centered">
-            <div class="column is-4"></div>
-            <a href="https://liberapay.com/codingotaku/donate" target="_blank" class="column is-1">
-                <img alt="Donate using Liberapay" src="/icons/liberapay_donate.svg">
+            <span class="column is-2"></span>
+            <a href="https://liberapay.com/codingotaku/donate" target="_blank" class="column is-flex is-2 is-justify-content-center">
+                <img alt="Donate using Liberapay" src="/icons/liberapay_donate.svg" title="Donate through Liberapay">
               </a>
-              <a href="https://paypal.me/otakucoding" target="_blank" class="column is-1">
-                <img src="/icons/paypal_donate.gif" title="PayPal - The safer, easier way to pay online!"
+              <a href="https://paypal.me/otakucoding" target="_blank" class="column is-flex is-2 is-justify-content-center">
+                <img src="/icons/paypal_donate.gif" title="Donate through paypal (Uses Non-Free JavaScript)")
                   alt="Donate with PayPal button" />
               </a>
-              <a href="https://www.patreon.com/bePatron?u=13678963" target="_blank" class="column is-1">
-                <svg width="15" height="15" viewBox="0 0 569 546">
+              <a href="https://www.patreon.com/bePatron?u=13678963" target="_blank" class="column is-flex is-2 is-justify-content-center">
+                <svg width="160" height="15" viewBox="0 0 1200 546">
+                    <title id="svg-title">Donate by becoming a patreon (Uses Non-Free JavaScript)</title>
                   <g>
                     <circle data-fill="1" id="Oval" cx="362" cy="204" r="204"></circle>
                     <rect data-fill="2" id="Rectangle" x="0" y="0" width="100" height="545"></rect>
                   </g>
-                </svg> Patron
+                  <text fill="#ffffff" text-anchor="middle" font-weight="700" font-size="500" x="1540" y="500">Patreon</text>
+                </svg>
               </a>
-              <div class="column is-4"></div>
+              <span class="column is-2"></span>
         </div>
     </section><br><br>
     <footer class="footer has-background-grey-dark">

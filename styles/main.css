@@ -6,6 +6,14 @@ body {
     background-color: #363636;
 }
 
+.is-transparent {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-item, .navbar-link, .navbar-burger {
+    color: white !important;
+}
+
 .columns a:hover { 
     color: white;
 }

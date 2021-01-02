@@ -2,124 +2,183 @@
 <html>
 
 <head>
-    <title>Coding Otaku</title>
-    <meta charset='utf-8'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>Home - Coding Otaku</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
 
-    <meta name="description" content="Coding tutorials and otaku contents!">
-    <meta name="author" content="Rahul Sivananda">
-    <meta name="keywords" content="HTML,CSS,XML,Java,Games,Otaku,Coding,Anime,Downloader,coding otaku,tutorials">
+    <meta name="description" content="Coding tutorials and otaku contents!" />
+    <meta name="author" content="Rahul Sivananda" />
+    <meta name="keywords"
+        content="coding-otaku, Anime, web-development, HTML, CSS, Java, Games, Otaku, Coding, Anime, Downloader" />
     <meta name="yandex-verification" content="b7de651853cf02dd" />
-    <link rel="stylesheet" href="/styles/bulma.min.css">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="icon" type="image/png" href="/images/me.svg">
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="icon" type="image/png" href="/images/me.svg" />
 </head>
 
 <body>
-    <section class="section">
-        <nav class="navbar is-fixed-top is-spaced is-dark" role="navigation" aria-label="main navigation">
-            <input type="checkbox" id="menu-toggle" class="is-hidden">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    Home
+    <nav class="title-bar">
+        <ul>
+            <li>
+                <a href="/">
+                    <img src="/images/me.svg" width="50" />
                 </a>
-                <label for="menu-toggle" class="navbar-burger burger">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </label>
-            </div>
-            <div id="navbar-coding-otaku" class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item" href="https://blog.codingotaku.com" target="_blank">Blogs</a>
-                    <a class="navbar-item" href="https://videos.codingotaku.com" target="_blank">Videos</a>
-                    <a class="navbar-item" href="/about">About</a>
-                    <a class="navbar-item" href="/contact">Say Hello</a>
-                    <a class="navbar-item" href="/donate">Donate</a>
-                </div>
-            </div>
-    </section>
+            </li>
+            <li>Coding Otaku
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="tabs">
+            <input type="radio" name="tabs" id="about" checked="checked">
+            <label for="about">About</label>
+            <div class="tab">
+                <article>
+                    <header>
+                        <h1>Welcome to My Website!</h1>
+                    </header>
+                    <div class="box">
+                        <h4>What is this site?</h4>
+                        <p>
+                            This is my attempt to make a fully JavaScript-free website/blog. I have revised it many
+                            times using various CSS frameworks before,
+                            but I have decided to do it completely from scratch this time.<br>
 
-    <section class="hero is-dark title-bg">
-        <div class="hero-body">
-            <div class="container has-text-centered is-dark">
-                <h1 class="title">Coding Otaku's Website</h1>
-                <h2 class="subtitle">
-                    This is my webpage. I am cleaning some stuff up and making it a simpler page.</h2>
+                            I might still have some JS left in some sub-pages (WIP on liberating them), but they are not
+                            necessary to use this site,
+                            which means you don't need to add an exception in your NoScript add-on.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h4>The name is confusing, what does it mean?</h4>
+                        <p>I came up with the name <strong>Coding Otaku</strong> while searching
+                            for a name that's related to both programming and Anime. I like watching Anime just as much
+                            as I love tinkering with code.
+                        </p>
+                        <p> To my surprise, No one bought "codingotaku" as a domain name, and I couldn't find anyone in
+                            social media going by that name.
+                        </p>
+                        <i>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/Otaku" target="_blank">
+                                    Otaku</a>
+                                is a Japanese term for people with consuming interests, In modern
+                                Japanese slang, the term otaku is mostly equivalent to "geek" or
+                                "nerd", but it is now widely used as a term to refer to people who are
+                                obsessed with Anime and Japanese culture (It's not the proper use though).
+                            </p>
+                        </i>
+                    </div>
+                </article>
+            </div>
+
+            <input type="radio" name="tabs" id="blogs" />
+            <label for="blogs">Blogs</label>
+            <div class="tab">
+                <article>
+                    <header>
+                        <h1>My Rants</h1>
+                    </header>
+                    <div class="box">
+                        <p>
+                            I have a subdomain dedicated for my blogs. It will be merged here in the future.
+                            You can find them at <a href="https://blog.codingotaku.com">https://blog.codingotaku.com</a>
+                            for now!
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <input type="radio" name="tabs" id="uses" />
+            <label for="uses">Uses</label>
+            <div class="tab">
+                <article>
+                    <header>
+                        <h1>The Tech I Use</h1>
+                    </header>
+                    <div class="box">
+                        <h4>Workstation</h4>
+                        <p>
+                        <ul>
+                            <li>Operating System - <a href="https://endeavouros.com/">EndeavourOS</a></li>
+                            <li>Desktop Environment - <a href="https://github.com/Airblader/i3">i3-gaps</a></li>
+                            <li>Browser - <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></li>
+                            <li>Email - <a href="https://tutanota.com">Tutanota</a></li>
+                            <li>Code Editor - <a href="https://www.vim.org/">Vim</a>, <a
+                                    href="https://vscodium.com/">VSCodium</a> With <a
+                                    href="https://github.com/vscodevim/vim/">Vim Extention</a></li>
+                            <li>Image Editor - <a href="https://www.gim.org">GIMP</a>, <a
+                                    href="https://inkscape.org/">Inkscape</a> </li>
+                            <li>API Testing - <a href="https://github.com/frigus02/RESTer">RESTer</a>, <a
+                                    href="https://curl.se/">cURL</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h4>Self-Host</h4>
+                        I self-host my videos and a comment server. My long term goal is to self-host everys ervice that
+                        I use.
+                        <ul>
+                            <li><a href="videos.codingotaku.com">PeerTube</a> - PeerTube is a federated video streaming
+                                platform that uses P2P technology.</li>
+                            <li><a href="https://posativ.org/isso/">ISSO</a> - Isso a commenting server similar to
+                                Disqus, but more privacy oriented.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <input type="radio" name="tabs" id="contact" />
+            <label for="contact">Contact</label>
+            <div class="tab">
+                <article>
+                    <header>
+                        <h1>Say Hello</h1>
+                    </header>
+                    <div class="box center-items">
+                        <span></span>
+                        <img src="/images/me.svg" alt="CodingOtaku Logo" width="50" title="CodingOtaku Logo">
+                        <img src="/images/fsf.png"
+                            alt="Free Software Foundation member since July 2020" width="180" height="45"/>
+                            <span></span>
+                    </div>
+                    <div class="box">
+                        <h4>Primary contact</h4>
+                        <p>The best way to get in touch with me is by e-mail
+                            <a class="has-text-link"
+                                href="mailto:contact@codingotaku.com">contact@codingotaku.com</a><br>
+                        </p>
+                        <p class="text-danger"> I respond to most messages if I can, but I can't guarantee a reply.
+                        </p><br>
+                        XMPP Group : <strong>codingotaku@conference.member.fsf.org</strong>
+                    </div>
+                    <div class="box">
+                        <h4>Social</h4>
+                        The only "Social Media" I use right now is Mastodon, I'm also linking to other places you
+                        can/cannot find me.<br><br>
+                        <a href="https://gitlab.com/codingotaku" target="_blank">
+                            <img src="/icons/gitlab.svg" width="20px" alt="GitLab Icon" title="Gitlab Account" />
+                            GitLab</a>
+                        <br><br>
+                        <a href="https://github.com/codingotaku" target="_blank">
+                            <img src="/icons/github.svg" width="20px" alt="GitHub Icon" title="GitHub Account" />
+                            GitHub</a>
+                        <br><br>
+                        <a href="https://fosstodon.org/@CodingOtaku" target="_blank">
+                            <img src="/icons/mastodon.svg" width="20px" alt="Mastodon Icon"
+                                title="Mastodon (Microblog)" />
+                            Mastodon</a>
+                        <br><br>
+                        <a href="https://www.fsf.org/fb" class="column is-2 has-text-danger" target="_blank">
+                            <img src="/icons/not-fd.svg" width="150px" alt="Not f'd — you won't find me on Facebook"
+                                title="You will never find me on Facebook">
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
-    <section class="container is-fluid has-text-centered has-text-white">
-        <img src="/images/me.svg" width="100px" alt="Coding Otaku Logo"> <br><br>
-        I'm a full-stack web de­vel­oper with an in­ter­est in FOSS, stan­dards, se­man­tics, and good user
-        ex­pe­ri­ences. I'm
-        cur­rently ex­plor­ing minimalism in my work.
-        <br><br><br><br>
-    </section>
-    <section class="container is-fluid">
-        <div class="columns is-centered">
-            <a class="column is-3 card box has-background-grey-dark has-text-white" href="/web">
-                <div class="card-image">
-                    <div class="image is-2by1"><img class="" src="/images/apps/lissajous-figures.jpg"></div>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <span class="subtitle has-text-white">Web Development</span><br>
-                        <span class="subtitle has-text-white is-6">My Web related projects<br><br>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">p5.js</span>
-                            <span class="tag">HTML</span>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <a class="column is-3 card box has-background-grey-dark has-text-white" href="/apps">
-                <div class="card-image">
-                    <div class="image is-2by1"><img class="" src="/images/apps/animu-downloaderu.jpg"></div>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <span class="subtitle has-text-white">App Development</span><br>
-                        <span class="subtitle has-text-white is-6">Desktop app developement<br><br>
-                            <span class="tag">CSS</span>
-                            <span class="tag">Java</span>
-                            <span class="tag">OpenJFX</span>
-                        </span>
-                    </div>
-                </div>
-            </a>
-            <a class="column is-3 card box has-background-grey-dark has-text-white" href="/api">
-                <div class="card-image">
-                    <div class="image is-2by1"><img class="" src="/images/apis/jedenmanga.png"></div>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <span class="subtitle has-text-white">APIs and wrappers</span><br>
-                        <span class="subtitle has-text-white is-6">Some API and wrapper projects<br><br>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">REST</span>
-                            <span class="tag">Java</span>
-                        </span>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section><br><br>
-    <footer class="footer has-background-grey-dark">
-        <div class="has-text-white has-text-centered">
-            <p>
-                <strong class="has-text-white">This site is made by</strong> <a href="https://codingotaku.com">Coding Otaku</a>. The source
-                code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
-        </div>
-        <a rel="me" href="https://fosstodon.org/@CodingOtaku"></a>
-    </footer>
 </body>
 
 </html>

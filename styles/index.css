@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  background-color: rgb(38, 41, 42);
+  color: rgb(232, 230, 227);
+  width: 100%;
+}
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+
+label, li, ol, p, summary, article {
+    line-height: 1.625;
+}
+.columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.column .is-2 {
+    flex-grow: 2;
+}
+.title-bar ul {
+    list-style-type: none;
+    color: #fff;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 3em;
+}
+
+.title-bar ul li:first-child {
+    position: absolute;
+}
+
+.title-bar ul li:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.tabs {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background:  #929292;
+  border-radius: 50px 5px 50px 10px;
+  font-weight: bold;
+  transition: all ease 0.2s;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  color: #fff;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: rgb(24, 26, 24);
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+.tab h1 {
+    text-align: center;
+}
+.box {
+    background-color: rgb(62, 67, 69);
+    box-shadow: rgb(86, 93, 96) 0.5em 0.5em 5px 0px;
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.center-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box h4 {
+    color: #0f0;
+}
+
+a {
+    color: aqua;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/images/me.svg">
+  <title>Cobra Effect on Hactoberfest - Coding Otaku Blog</title>
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+  <nav class="title-bar">
+    <ul>
+      <li>
+        <a href="/">
+          <img src="/images/me.svg" width="50" />
+        </a>
+      </li>
+      <li>Coding Otaku Blogs
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="content">
+      <section>
+        <div class="container">
+          <h1 class="title">Cobra Effect on Hactoberfest</h1>
+          <h2 class="subtitle">What went wrong?</h2>
+          <span>- Created on <time datetime="2020-10-02">2<sup>nd</sup> Oct 2020 </time></span>
+        </div>
+      </section><br>
+      <div class="blog-box">
+        <img class="img" src="/images/blog/cobra-effect-on-hactoberfest/banner.jpg"
+          alt="Cobra icon, Text says Hacktoberfest 2020">
+        <h1 class="title has-text-white">Hacktoberfest? Never heard of it :/</h1>
+        <a href="https://www.digitalocean.com/blog/announcing-hacktoberfest-2020" target="_blank">
+          Hacktoberfest
+        </a>
+        is an annual event that occurs every October held by Digital Ocean.
+        The event encourages developers to submit Pull Requests to Open Source repositories and as a reward
+        you
+        earn
+        a limited-edition T-shirt.<br>
+        Developers must contribute to a minimum of 4 repositories, But there is no upper limit set by
+        Digital
+        Ocean,
+        this is where they went wrong.<br><br>
+        Even though Digital Ocean has set up some
+        <a href="https://hacktoberfest.digitalocean.com/details#quality">
+          "Quality standards"</a>, it wasn't enough for stop the
+        <a href="https://nitter.net/shitoberfest/status/1311646233128181760" target="_blank">spam flood</a>.
+        <br><br>
+        <br>
+        <h1 class="title has-text-white">What went wrong?</h1>
+        Right now it is a blame game, The tweets says it all began because of a YouTuber demonstrated how to
+        do
+        a
+        PR, but he failed at doing a quality contribution.<br>
+        But, This has happened in the past — every year around the same time (October) — GitHub gets flooded
+        with
+        spam PRs, and this was the reason Digital Ocean updated their rules for contribution.<br>
+        <br>
+        In the first glance, it seems that the YouTuber is at fault, Most of the PR Spam looks a lot like
+        what
+        he
+        demonstrated. <i>(I am not linking the YouTube video here, it might get deleted by the time you read
+          this
+          article)</i><br><br>
+        Searching GitHub for <a href="https://github.com/search?q=%22Amazing+Project%22&type=issues"
+          target="_blank">"Amazing Project"</a>
+        or <a href="https://github.com/search?q=%22Improve+Docs%22&type=issues">"Improve
+          Docs"</a>
+        (PR changes he demonstrated in his video) is being widely used for the PR spam!
+        — here is an <a href="https://github.com/pinax/symposion/pull/189/files" target="_blank">example</a>.
+        <br><br>
+        But is he the only one responsible? No, the issue began with Digital Ocean Not being clear on what
+        needs
+        to
+        be done to qualify.<br>
+        Providing T-Shirts for PRs was not a good idea to begin with as it just screams the <a
+          href="https://en.wikipedia.org/wiki/Cobra_effect" target="_blank"><b>Cobra
+            Effect</b></a> at their face!
+        <br>
+        The current implementation by Digital Ocean to fight spam is by labeling PRs with "invalid" or
+        "Spam".<br>
+        <b>Which means, the people who never heard of this event will not be able to report this unless they
+          go
+          to
+          Digital
+          Ocean's post on figting spam and understand what's to be done.</b><br>
+        They also mentioned that they validate all PRs later in the event but that won't stop anyone.
+        <br><br>
+        <h1 class="title has-text-white">Anyone can whine, what's your solution?</h1>
+        Before I get to my solution, see what GitHub proposed due to PR spam.<br>
+        <div class="notification">
+          Need to take a break, or limit which people can send a pull request to your repo?<br><br>
+          You can now limit interactions for a period of time. Find it in your project settings ›
+          moderation
+          settings › interaction limits. <a href="https://t.co/ZCvQqBczVY" class="has-text-danger"
+            target="_blank">pic.twitter.com/ZCvQqBczVY</a><br>
+          — GitHub (@github) October 1, 2020
+        </div>
+        Very Microsoft-y way of tackling problems ;)<br>
+        <br>
+        ...Okay, I'll stop.<br><br>
+        Here what can be done.<br>
+        Digital Ocean could stop current way of Hacktoberfest. But instead they can do a proper hackathon
+        which
+        promotes free and open-source software.<br>
+        Let the developers improve on some existing repositories or create one of their own on platform of
+        their
+        choice. But set a limiter on how many repositories are considered. (Right now There is no upper
+        limit)<br><br>
+        Reward based on Quality of commits instead of quantity.<br>
+        Labeling hactoberfest and mentioning DigitalOcean might help spread word about the hackathon, but it
+        will
+        eventually become a spam.<br>
+        Instead, let developers submit link to the contributed repositories and usernames of developers
+        to validate commits. If anyone starts spamming with meaningless commits, disqualify them
+        immediately.<br><br>
+        Will this stop the PR spam? Yes, to an extent. But the internet will never run out of spammers.
+      </div>
+    </div>
+    <div class="blog-bar">
+      <h1 class="title text-center">More Blogs</h1>
+      <iframe src="/blogs/" type="text/html" class="blog-nav"></iframe>
+    </div>
+  </div>
+  <footer class="footer box">
+    <div class="content text-center">
+      <strong>This blog is made by</strong>
+      <a href="https://codingotaku.com">
+        Coding Otaku</a>.
+      The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      The website content is licensed
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>

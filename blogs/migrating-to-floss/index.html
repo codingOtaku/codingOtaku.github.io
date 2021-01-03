@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/icons/logo-with-bg.svg">
+  <title>Migrating to FLOSS</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <style>
+    @media screen and (max-width: 1024px) {
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        border: 1px solid #999;
+        margin-bottom: 1em;
+      }
+
+      td {
+        border: none !important;
+        position: relative;
+      }
+
+      td {
+        width: 100%;
+      }
+
+      tr:nth-child(odd) td:nth-of-type(1):before {
+        color: red;
+        content: "Avoid --> ";
+        font-weight: bold;
+      }
+
+      tr:nth-child(odd) td:nth-of-type(2):before {
+        color: green;
+        content: "Use ---->";
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section">
+    <nav class="title-bar">
+      <ul>
+        <li>
+          <a href="/">
+            <img src="/images/me.svg" width="50" />
+          </a>
+        </li>
+        <li>Coding Otaku Blogs
+        </li>
+      </ul>
+    </nav>
+    <noscript>
+      <div class="notification">
+        <div class="title">
+          Please enable JavaScript to navigate.
+        </div>
+        <div>
+          This page is auto-generated and does <strong>not</strong> contain any form of telemetry or ads.<br>
+          JavaScript is required to use the "Know more" option available in this page.<br>
+          Complete source code for this site can be found at <strong><a href="https://github.com/CodingOtaku/codingotaku.github.io"
+              target="_blank">https://github.com/CodingOtaku/codingotaku.github.io</a></strong>.
+        </div>
+      </div>
+    </noscript>
+  </section>
+  <div class="container">
+    <div class="content has-text-white">
+      <section>
+        <h1 class="title has-text-white">Migrating To FLOSS!</h1>
+        <h2 class="subtitle has-text-white">A few alternatives to the privacy hogging softwares you use.</h2>
+        <span>
+          - Created on <time datetime="2020-07-23">23<sup>rd</sup> July 2020 </time>
+        </span>
+      </section><br>
+      <section>
+        <div class="blog-box has-background-grey-dark has-text-white">
+          <div class="notification is-danger">
+            This list is not complete.<br>
+            Please do note that just migrating to the alternatives mentioned in this
+            list is not enough for user privacy.<br>
+            For example just installing the operating systems mentioned here will not save you from the privacy
+            exploits of the software you choose to install in it.<br>
+            Be cautious of what you do, always make sure that there are no binary blobs in anything that you use.
+            Get rid of things that automatically opts you into their telemetry services.
+          </div>
+          This is a list of <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software"
+            target="_blank">FLOSS</a>
+          (Free/Libre and Open-source) softwares that can be used
+          instead of the <a href="https://en.wikipedia.org/wiki/Proprietary_software" target="_blank">proprietary</a>
+          malwares in your life.
+          <br>
+          I have tried to list out every alternatives that I am using. And some of the softwares might not be
+          maintained by the time you read this.<br>
+          If they are outdated I recommend you to find alternatives from <a href="https://privacytools.io"
+            target="_blank">https://privacytools.io</a> and <a href="https://alternativeto.net/"
+            target="_blank">https://alternativeto.net</a><br>
+          You can also update this list with a pull request <a href="https://github.com/codingotaku/Blog"
+            target="_blank">here</a><br>
+          <br>
+          <br>
+          There’s a big difference between
+          <span class="tag is-success">privacy</span> and
+          <span class="tag is-danger">security</span>,
+          In a nutshell security is confidentiality of your data, while
+          privacy is appropriate use of your data.<br>
+          Of course, without confidentiality (encryption), your data can be intercepted and used inappropriately, so
+          entirely unencrypted transmissions are always susceptible to privacy violations.<br>
+          But just encrypting your data is not sufficient for your privacy, a weak encryption or a backdoor will
+          provide you a false sense of privacy and security. This is why you should always choose apps and services
+          which you can read the source code and lets you modify them.<br><br>
+          <div class="box notification is-primary">
+            <strong>The best way to enforce privacy is to collect no data at all.</strong>
+          </div>
+          <br>
+          <h1 class="title has-text-white">Alternatives</h1>
+          <h2 class="subtitle">This will soon become a long list, so I have tried to optimize this page as much as I can
+            for
+            your
+            convenience.</h2>
+          <i class="has-text-danger subtitle">
+            And I strongly encorage you to click on the <b>Know More...</b> button to know our reason for choosing
+            these
+            alternatives.<br>
+            It would also be better if you could click through all the links we provided for more detailed
+            information.
+          </i><br><br>
+          <table class="table">
+            <thead>
+              <th class="has-text-danger">Avoid</th>
+              <th class="has-text-success">Use</th>
+              <th>Reason</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="icon">
+                    <img src="/icons/brands/windows.svg" alt="Windows logo">
+                  </span>Windows, <span class="icon">
+                    <img src="/icons/brands/apple.svg" alt="Apple logo">
+                  </span>Mac OS
+                </td>
+                <td>
+                  <span class="icon">
+                    <img src="/icons/brands/gnu.png" alt="GNU logo">
+                  </span>
+                  <span class="icon">
+                    <img src="/icons/brands/linux.svg" alt="Linux logo">
+                  </span>
+                  GNU/Linux</a>
+                </td>
+                <td><button class="button is-dark" onclick="launch('os_desktop')">Know More...</button></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="hide">
+                  <div id="os_desktop"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="icon">
+                    <img src="/icons/brands/android.svg" alt="Android logo">
+                  </span>Android,
+                  <span class="icon">
+                    <img src="/icons/brands/apple.svg" alt="Apple logo">
+                  </span>iOS
+                </td>
+                <td>
+                  <a href="https://www.lineageos.org" target="_blank" class="has-text-success">LineageOS
+                    (Official Builds)</a>,
+                  <a href="https://www.privacytools.io/operating-systems/#aosp_os" target="_blank"
+                    class="has-text-success">Other AOSP based operating system for
+                    Android</a>
+                </td>
+                <td><button class="button is-dark" onclick="launch('os_mobile')">Know More...</button></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="hide">
+                  <div id="os_mobile"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="icon">
+                    <img src="/icons/brands/google-play.svg" alt="Android logo">
+                  </span>Playstore,
+                  <span class="icon">
+                    <img src="/icons/brands/apple.svg" alt="Apple logo">
+                  </span>Appstore
+                </td>
+                <td>
+                  <a href="https://f-droid.org" target="_blank" class="has-text-success">
+                    <span>
+                      <img src="/icons/brands/fdroid.svg" width="100px" alt="F-Droid logo">
+                    </span>
+                  </a>
+                </td>
+                <td><button class="button is-dark" onclick="launch('store_mobile')">Know More...</button></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="hide">
+                  <div id="store_mobile"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Google Chrome (Mobile), Safari (Mobile)
+                </td>
+                <td>
+                  <a href="https://f-droid.org/en/packages/org.gnu.icecat/" class="has-text-success" target="_blank">
+                    IceCatMobile
+                  </a>,
+                  <a href="https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/" class="has-text-success"
+                    target="_blank">Fennec F-Droid
+                  </a>,
+                  <a href="https://guardianproject.info/fdroid/" class="has-text-success" target="_blank">
+                    TorBrowser (Guardian Project)
+                  </a>,
+                  <a href="https://www.mozilla.org/en-US/firefox/mobile/" class="has-text-success"
+                    target="_blank">Firefox
+                    Mobile
+                </td>
+                <td><button class="button is-dark" onclick="launch('browser_mobile')">Know More...</button></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="hide">
+                  <div id="browser_mobile"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  WhatsApp, Facebook Messenger, Duo, hike, line, etc.
+                </td>
+                <td>
+                  <a href="https://element.io/get-started" class="has-text-success" target="_blank">Element
+                    (previously Riot.im)
+                  </a>,
+                  <a href="https://signal.org/android/apk/" class="has-text-success" target="_blank">Signal</a>,
+                  <a href="https://f-droid.org/en/packages/org.telegram.messenger/" class="has-text-success"
+                    target="_blank">Telegram FOSS
+                  </a>
+                </td>
+                <td><button class="button is-dark" onclick="launch('communication_mobile')">Know More...</button></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="hide">
+                  <div id="communication_mobile"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Facebook
+                </td>
+                <td>
+                  <a href="https://diasporafoundation.org/" class="has-text-success" target="_blank">Diaspora</a>
+                </td>
+                <td><button class="button is-dark" onclick="launch('social_mobile')">Know More...</button></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="hide">
+                  <div id="social_mobile"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          - Be safe
+        </div>
+      </section>
+    </div>
+    <div class="blog-bar">
+      <h1 class="title text-center">More Blogs</h1>
+      <iframe src="/blogs/" type="text/html" class="blog-nav"></iframe>
+    </div>
+  </div>
+  <footer class="footer has-background-grey-dark has-text-white">
+    <div class="content has-text-centered has-text-white">
+      <strong>This blog is made by</strong> <a href="https://codingotaku.com">Coding Otaku</a>. The source code is
+      licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </div>
+    <a rel="me" href="https://fosstodon.org/@CodingOtaku"></a>
+  </footer>
+  <script data-isso="https://comments.codingotaku.com/codingotaku/"
+    src="https://comments.codingotaku.com/codingotaku/js/embed.min.js"></script>
+
+  <script>
+    function launch(page) {
+      const frame = document.getElementById(page);
+      if (!frame.innerHTML) {
+        fetch(`./know/${page}.html`).then(res => res.text()).then(res => {
+          frame.innerHTML = res
+        })
+      }
+      const parent = frame.parentNode;
+      if (parent.classList.contains('hide')) {
+        parent.classList.remove('hide');
+      } else {
+        parent.classList.add('hide');
+      }
+    }
+  </script>
+  <style>
+    .divider {
+      display: block;
+      height: 2px;
+      border: 1px solid #aaaaaa;
+      margin: 2rem 2rem;
+    }
+
+    @media screen and (min-width:769px),
+    print {
+
+      .modal-card,
+      .modal-content {
+        margin: 0 auto;
+        max-height: calc(100vh - 40px);
+        width: 769px;
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+  </style>
+</body>
+
+</html>
+</body>
+
+</html>

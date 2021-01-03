@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <base target="_parent">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(38, 41, 42);
+            color: rgb(232, 230, 227);
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        * {
+            scrollbar-color: #202324 #454a4d;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            order: 1;
+            display: block;
+            padding: 1rem 2rem;
+            margin-bottom: 0.2rem;
+            cursor: pointer;
+            background-color: rgb(62, 67, 69);
+            border-radius: 50px 50px 50px 50px;
+            font-weight: bold;
+        }
+
+        ul li a {
+            display: inline-block;
+            color: #0f0;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        ul li:hover {
+            background: rgb(24, 26, 24);
+        }
+
+        ul li a time {
+            color: #ffffff;
+            display: inline-flex;
+            width: 10em;
+        }
+
+        ul li a time::after {
+            content: " - ";
+            white-space: pre;
+        }
+
+        @media (max-width: 45em) {
+            ul {
+                padding: 0;
+            }
+
+            ul li a time {
+                width: 100%;
+            }
+
+            ul li {
+                padding: 1rem;
+            }
+
+            .tabs .tab,
+            .tabs label {
+                order: initial;
+            }
+
+            .tabs label {
+                width: 100%;
+                margin-right: 0;
+                margin-top: 0.2rem;
+            }
+        }
+        .text-danger {
+            color: firebrick;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="/blogs/open-brain-internet-thingy/">
+                <time datetime="2020-10-03">03 Oct 2020</time>
+                Open Brain Internet Thingy
+            </a>
+        </li>
+        <li>
+            <a href="/blogs/cobra-effect-on-hactoberfest/">
+                <time datetime="2020-10-02">02 Oct 2020</time>
+                Cobra Effect on Hactoberfest
+            </a>
+        </li>
+        <li>
+            <a href="/blogs/free-unix/">
+                <time datetime="2020-09-27">27 Sep 2020</time>
+                Free Unix
+            </a>
+        </li>
+        <li>
+            <a href="/blogs/why-do-i-not-use-analytics/">
+                <time datetime="2020-09-01">01 Sep 2020</time>
+                Why Do I Not Use Analytics?
+            </a>
+        </li>
+        <li>
+            <a href="/blogs/why-do-i-say-gnu-linux/">
+                <time datetime="2020-07-31">31 July 2020</time>
+                Why Do I Say GNU/Linux?
+            </a>
+        </li>
+        <li>
+            <a href="/blogs/non-free-school/">
+                <time datetime="2020-07-23">23 July 2020</time>
+                Non-free School
+            </a>
+        </li>
+        <li>
+            <a href="/blogs/migrating-to-floss/">
+                <time datetime="2020-07-23">23 July 2020</time>
+                Migrating to FLOSS! <span class="text-danger">(Requires Javascript for full functionality)</span>
+            </a>
+        </li>
+        <li>
+            <a href="/blogs/india-chinese-app-ban/">
+                <time datetime="2020-07-03">03 July 2020</time>
+                India: Chinese App Ban
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

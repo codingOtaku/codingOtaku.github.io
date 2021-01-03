@@ -190,7 +190,7 @@ a {
 }
 .blog-container {
   display: flex;
-  height: 100vh;
+  height: 70vh;
   flex-direction: column;
 }
 

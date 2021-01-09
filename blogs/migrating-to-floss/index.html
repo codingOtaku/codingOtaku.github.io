@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="/icons/logo-with-bg.svg">
   <title>Migrating to FLOSS</title>
   <link rel="stylesheet" href="/styles/index.css">
+  <base href="/" />
   <style>
     @media screen and (max-width: 1024px) {
 
@@ -59,11 +60,23 @@
     <nav class="title-bar">
       <ul>
         <li>
-          <a href="/">
-            <img src="/images/me.svg" width="50" />
-          </a>
+          <a href="/" class="header"><img src="/images/me.svg" width="50" />Coding Otaku</a>
         </li>
-        <li>Coding Otaku Blogs
+        <li>
+          <ul>
+            <li>
+              <a href="#about" tabindex="1" class="label">About</a>
+            </li>
+            <li>
+              <a href="#blogs" tabindex="2" class="label">Blogs</a>
+            </li>
+            <li>
+              <a href="#uses" tabindex="3" class="label">Uses</a>
+            </li>
+            <li>
+              <a href="#contact" tabindex="4" class="label">Contact</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -75,7 +88,8 @@
         <div>
           This page is auto-generated and does <strong>not</strong> contain any form of telemetry or ads.<br>
           JavaScript is required to use the "Know more" option available in this page.<br>
-          Complete source code for this site can be found at <strong><a href="https://github.com/CodingOtaku/codingotaku.github.io"
+          Complete source code for this site can be found at <strong><a
+              href="https://github.com/CodingOtaku/codingotaku.github.io"
               target="_blank">https://github.com/CodingOtaku/codingotaku.github.io</a></strong>.
         </div>
       </div>
@@ -302,7 +316,7 @@
     function launch(page) {
       const frame = document.getElementById(page);
       if (!frame.innerHTML) {
-        fetch(`./know/${page}.html`).then(res => res.text()).then(res => {
+        fetch(`/blogs/migrating-to-floss/know/${page}.html`).then(res => res.text()).then(res => {
           frame.innerHTML = res
         })
       }

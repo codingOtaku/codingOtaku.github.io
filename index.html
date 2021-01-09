@@ -26,19 +26,30 @@
     <nav class="title-bar">
         <ul>
             <li>
-                <a href="/">
-                    <img src="/images/me.svg" width="50" />
-                </a>
+                <a href="/" class="header"><img src="/images/me.svg" width="50" />Coding Otaku</a>
             </li>
-            <li>Coding Otaku
+            <li>
+                <ul>
+                    <li>
+                        <a href="#about" tabindex="1" class="label">About</a>
+                    </li>
+                    <li>
+                        <a href="#blogs" tabindex="2" class="label">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#uses" tabindex="3" class="label">Uses</a>
+                    </li>
+                    <li>
+                        <a href="#contact" tabindex="4" class="label">Contact</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>
     <section>
-        <div class="tabs">
-            <input type="radio" name="tabs" id="about" checked="checked">
-            <label for="about">About</label>
-            <div class="tab">
+        <div class="content">
+
+            <div class="tab" id="about">
                 <article>
                     <header>
                         <h1>Welcome to My Website!</h1>
@@ -78,9 +89,7 @@
                 </article>
             </div>
 
-            <input type="radio" name="tabs" id="blogs" />
-            <label for="blogs">Blogs</label>
-            <div class="tab">
+            <div class="tab" id="blogs">
                 <article>
                     <header>
                         <h1>My Rants</h1>
@@ -91,14 +100,62 @@
                         <span class="text-danger">(Requires JavaScript)</span>
                     </h4>
                     <div class="blog-container">
-                        <iframe src="/blogs/" class="blog-nav" type="text/html"></iframe>
+                        <ul>
+                            <li>
+                                <a href="/blogs/open-brain-internet-thingy/">
+                                    <time datetime="2020-10-03">03 Oct 2020</time>
+                                    Open Brain Internet Thingy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blogs/cobra-effect-on-hactoberfest/">
+                                    <time datetime="2020-10-02">02 Oct 2020</time>
+                                    Cobra Effect on Hactoberfest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blogs/free-unix/">
+                                    <time datetime="2020-09-27">27 Sep 2020</time>
+                                    Free Unix
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blogs/why-do-i-not-use-analytics/">
+                                    <time datetime="2020-09-01">01 Sep 2020</time>
+                                    Why Do I Not Use Analytics?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blogs/why-do-i-say-gnu-linux/">
+                                    <time datetime="2020-07-31">31 July 2020</time>
+                                    Why Do I Say GNU/Linux?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blogs/non-free-school/">
+                                    <time datetime="2020-07-23">23 July 2020</time>
+                                    Non-free School
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blogs/migrating-to-floss/">
+                                    <time datetime="2020-07-23">23 July 2020</time>
+                                    Migrating to FLOSS! <span class="text-danger">(Requires Javascript for full
+                                        functionality)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blogs/india-chinese-app-ban/">
+                                    <time datetime="2020-07-03">03 July 2020</time>
+                                    India: Chinese App Ban
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </article>
             </div>
 
-            <input type="radio" name="tabs" id="uses" />
-            <label for="uses">Uses</label>
-            <div class="tab">
+            <div class="tab" id="uses">
                 <article>
                     <header>
                         <h1>The Tech I Use</h1>
@@ -135,9 +192,8 @@
                     </div>
                 </article>
             </div>
-            <input type="radio" name="tabs" id="contact" />
-            <label for="contact">Contact</label>
-            <div class="tab">
+
+            <div class="tab" id="contact">
                 <article>
                     <header>
                         <h1>Say Hello</h1>

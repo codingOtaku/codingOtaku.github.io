@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(38, 41, 42);
+  background-color: #061328;
   color: rgb(232, 230, 227);
 }
 
@@ -12,10 +12,10 @@ body {
   height: 100vh;
 }
 * {
-  scrollbar-color: #202324 #454a4d;
+  scrollbar-color: #18396e #040e1d;
 }
 
-label,
+.label,
 li,
 ol,
 p,
@@ -37,16 +37,22 @@ article {
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header {
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bolder;
+  color: white;
+}
+.title-bar ul > li {
+  flex-grow: 1;
 }
 
-.title-bar ul li:first-child {
-  position: absolute;
-}
-
-.title-bar ul li:nth-child(2) {
-  width: 100%;
-  text-align: center;
-  font-size: xx-large;
+.title-bar ul li ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 .tabs {
@@ -56,46 +62,39 @@ article {
   flex-wrap: wrap;
 }
 
-.tabs label {
+.label {
   order: 1;
   display: block;
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #929292;
-  border-radius: 50px 5px 50px 10px;
   font-weight: bold;
   transition: all ease 0.2s;
+  color: white;
+  text-decoration: none;
+}
+
+.label:hover {
+  background: #122541;
 }
 
 .tabs .tab {
   order: 99;
   flex-grow: 1;
   width: 100%;
-  display: none;
   padding: 1rem;
   color: #fff;
 }
 
-.tabs input[type="radio"] {
-  display: none;
-}
-
-.tabs input[type="radio"]:checked + label {
-  background: rgb(24, 26, 24);
-}
-
-.tabs input[type="radio"]:checked + label + .tab {
-  display: block;
-}
-
 @media (max-width: 45em) {
-  .tabs .tab,
-  .tabs label {
+  .title-bar ul {
+    flex-direction: column;
+  }
+  .tabs .tab {
     order: initial;
   }
 
-  .tabs label {
+  .label {
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem;
@@ -107,14 +106,26 @@ article {
   .columns .column {
     display: block;
   }
+
+  .blog-container ul {
+    padding: 0;
+  }
+
+  .blog-container ul li a time {
+    width: 100%;
+  }
+
+  .blog-container ul li a {
+    padding: 1rem;
+    word-wrap: break-word;
+  }
 }
 
 .tab h1 {
   text-align: center;
 }
 .box {
-  background-color: rgb(62, 67, 69);
-  box-shadow: rgb(86, 93, 96) 0.5em 0.5em 5px 0px;
+  background-color: #122541;
   padding: 2em;
   border-radius: 10px;
   margin-bottom: 2em;
@@ -145,7 +156,7 @@ a {
 }
 .notification {
   border-radius: 10px;
-  background-color: #203120;
+  background-color: #122541;
   width: 100%;
   padding: 1rem;
   margin: 1rem -1rem;
@@ -154,7 +165,7 @@ a {
   display: block;
   width: 75%;
   margin: 0 auto;
-  background-color: rgb(72, 77, 79);
+  background-color: #0a1930;
   padding: 2rem;
   border-radius: 50px;
 }
@@ -176,7 +187,7 @@ a {
   width: 28px;
 }
 .blog-box {
-  background-color: rgb(62, 67, 69);
+  background-color: #0a1930;
   padding: 2em;
   border-radius: 10px;
   margin-bottom: 2em;
@@ -190,8 +201,46 @@ a {
 }
 .blog-container {
   display: flex;
-  height: 70vh;
   flex-direction: column;
+}
+
+.blog-container ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.blog-container ul li {
+  order: 1;
+  display: block;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  background-color: #122541;
+  border-radius: 50px 50px 50px 50px;
+  font-weight: bold;
+}
+
+.blog-container ul li:hover {
+      background: #061328;
+}
+
+.blog-container ul li a {
+  display: inline-block;
+  color: #0f0;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+
+.blog-container ul li a time {
+  color: #ffffff;
+  display: inline-flex;
+  width: 10em;
+}
+
+.blog-container ul li a time::after {
+  content: " - ";
+  white-space: pre;
 }
 
 .blog-nav {
@@ -214,4 +263,12 @@ a {
 
 .subtitle {
   font-size: x-large;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }

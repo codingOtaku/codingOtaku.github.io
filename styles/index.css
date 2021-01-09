@@ -97,6 +97,11 @@ body {
   border-radius: 50px;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+}
+
 .box {
   background-color: #122541;
   padding: 2em;
@@ -151,10 +156,6 @@ a {
   height: 75vh;
   width: 75%;
   margin: 0 auto;
-}
-.blog-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .blog-container ul {
@@ -290,9 +291,11 @@ pre {
   }
   .content {
     flex-grow: 1;
+    width: unset;
   }
   .tab {
     margin: 0 auto !important;
+    padding: 0;
   }
   .title-bar ul {
     flex-direction: column;

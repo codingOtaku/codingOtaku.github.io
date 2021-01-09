@@ -299,9 +299,13 @@ pre {
 
 /* Mobile UI Changes*/
 @media (max-width: 45em) {
+  .title-bar {
+    position: relative;
+  }
+
   .title-bar + section,
   .title-bar + .container {
-    margin-top: 24rem !important;
+    margin-top: 2rem !important;
   }
   .center-items {
     flex-direction: column;
@@ -314,7 +318,7 @@ pre {
   .tab {
     margin: 0 auto !important;
     padding: 0;
-    scroll-margin-top: 23rem;
+    scroll-margin-top: 0;
   }
   .title-bar ul {
     flex-direction: column;

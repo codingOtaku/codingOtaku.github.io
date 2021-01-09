@@ -9,6 +9,22 @@
   <link rel="stylesheet" href="/styles/index.css">
   <base href="/" />
   <style>
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 5px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    tr td div {
+      margin: 0 auto;
+      padding: 3em;
+    }
+
     @media screen and (max-width: 1024px) {
 
       table,
@@ -27,7 +43,7 @@
       }
 
       tr {
-        border: 1px solid #999;
+        border: none;
         margin-bottom: 1em;
       }
 
@@ -65,16 +81,16 @@
         <li>
           <ul>
             <li>
-              <a href="#about" tabindex="1" class="label">About</a>
+              <a href="#about" tabindex="1" class="nav-item">About</a>
             </li>
             <li>
-              <a href="#blogs" tabindex="2" class="label">Blogs</a>
+              <a href="#blogs" tabindex="2" class="nav-item">Blogs</a>
             </li>
             <li>
-              <a href="#uses" tabindex="3" class="label">Uses</a>
+              <a href="#uses" tabindex="3" class="nav-item">Uses</a>
             </li>
             <li>
-              <a href="#contact" tabindex="4" class="label">Contact</a>
+              <a href="#contact" tabindex="4" class="nav-item">Contact</a>
             </li>
           </ul>
         </li>
@@ -96,16 +112,16 @@
     </noscript>
   </section>
   <div class="container">
-    <div class="content has-text-white">
+    <div class="content text-white">
       <section>
-        <h1 class="title has-text-white">Migrating To FLOSS!</h1>
-        <h2 class="subtitle has-text-white">A few alternatives to the privacy hogging softwares you use.</h2>
+        <h1 class="title text-white">Migrating To FLOSS!</h1>
+        <h2 class="subtitle text-white">A few alternatives to the privacy hogging softwares you use.</h2>
         <span>
           - Created on <time datetime="2020-07-23">23<sup>rd</sup> July 2020 </time>
         </span>
       </section><br>
       <section>
-        <div class="blog-box has-background-grey-dark has-text-white">
+        <div class="blog-box has-background-grey-dark text-white">
           <div class="notification is-danger">
             This list is not complete.<br>
             Please do note that just migrating to the alternatives mentioned in this
@@ -144,12 +160,12 @@
             <strong>The best way to enforce privacy is to collect no data at all.</strong>
           </div>
           <br>
-          <h1 class="title has-text-white">Alternatives</h1>
+          <h1 class="title text-white">Alternatives</h1>
           <h2 class="subtitle">This will soon become a long list, so I have tried to optimize this page as much as I can
             for
             your
             convenience.</h2>
-          <i class="has-text-danger subtitle">
+          <i class="text-danger subtitle">
             And I strongly encorage you to click on the <b>Know More...</b> button to know our reason for choosing
             these
             alternatives.<br>
@@ -158,8 +174,8 @@
           </i><br><br>
           <table class="table">
             <thead>
-              <th class="has-text-danger">Avoid</th>
-              <th class="has-text-success">Use</th>
+              <th class="text-danger">Avoid</th>
+              <th class="text-success">Use</th>
               <th>Reason</th>
             </thead>
             <tbody>
@@ -197,10 +213,10 @@
                   </span>iOS
                 </td>
                 <td>
-                  <a href="https://www.lineageos.org" target="_blank" class="has-text-success">LineageOS
+                  <a href="https://www.lineageos.org" target="_blank" class="text-success">LineageOS
                     (Official Builds)</a>,
                   <a href="https://www.privacytools.io/operating-systems/#aosp_os" target="_blank"
-                    class="has-text-success">Other AOSP based operating system for
+                    class="text-success">Other AOSP based operating system for
                     Android</a>
                 </td>
                 <td><button class="button is-dark" onclick="launch('os_mobile')">Know More...</button></td>
@@ -220,7 +236,7 @@
                   </span>Appstore
                 </td>
                 <td>
-                  <a href="https://f-droid.org" target="_blank" class="has-text-success">
+                  <a href="https://f-droid.org" target="_blank" class="text-success">
                     <span>
                       <img src="/icons/brands/fdroid.svg" width="100px" alt="F-Droid logo">
                     </span>
@@ -238,16 +254,16 @@
                   Google Chrome (Mobile), Safari (Mobile)
                 </td>
                 <td>
-                  <a href="https://f-droid.org/en/packages/org.gnu.icecat/" class="has-text-success" target="_blank">
+                  <a href="https://f-droid.org/en/packages/org.gnu.icecat/" class="text-success" target="_blank">
                     IceCatMobile
                   </a>,
-                  <a href="https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/" class="has-text-success"
+                  <a href="https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/" class="text-success"
                     target="_blank">Fennec F-Droid
                   </a>,
-                  <a href="https://guardianproject.info/fdroid/" class="has-text-success" target="_blank">
+                  <a href="https://guardianproject.info/fdroid/" class="text-success" target="_blank">
                     TorBrowser (Guardian Project)
                   </a>,
-                  <a href="https://www.mozilla.org/en-US/firefox/mobile/" class="has-text-success"
+                  <a href="https://www.mozilla.org/en-US/firefox/mobile/" class="text-success"
                     target="_blank">Firefox
                     Mobile
                 </td>
@@ -263,11 +279,11 @@
                   WhatsApp, Facebook Messenger, Duo, hike, line, etc.
                 </td>
                 <td>
-                  <a href="https://element.io/get-started" class="has-text-success" target="_blank">Element
+                  <a href="https://element.io/get-started" class="text-success" target="_blank">Element
                     (previously Riot.im)
                   </a>,
-                  <a href="https://signal.org/android/apk/" class="has-text-success" target="_blank">Signal</a>,
-                  <a href="https://f-droid.org/en/packages/org.telegram.messenger/" class="has-text-success"
+                  <a href="https://signal.org/android/apk/" class="text-success" target="_blank">Signal</a>,
+                  <a href="https://f-droid.org/en/packages/org.telegram.messenger/" class="text-success"
                     target="_blank">Telegram FOSS
                   </a>
                 </td>
@@ -283,7 +299,7 @@
                   Facebook
                 </td>
                 <td>
-                  <a href="https://diasporafoundation.org/" class="has-text-success" target="_blank">Diaspora</a>
+                  <a href="https://diasporafoundation.org/" class="text-success" target="_blank">Diaspora</a>
                 </td>
                 <td><button class="button is-dark" onclick="launch('social_mobile')">Know More...</button></td>
               </tr>

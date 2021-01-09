@@ -16,13 +16,31 @@ body {
   scrollbar-color: #18396e #040e1d;
 }
 
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.title-bar {
+  position: fixed;
+  background-color: #061328;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+.title-bar + section,
+.title-bar + .container {
+  margin-top: 10rem !important;
+}
+
 /* Header styles */
 .title-bar ul {
   list-style-type: none;
   color: #fff;
   padding-left: 1em;
   padding-right: 1em;
-  margin-bottom: 3em;
   display: flex;
   justify-content: space-evenly;
 }
@@ -44,7 +62,6 @@ body {
 
 .header,
 .nav-item {
-  order: 1;
   display: block;
   padding: 1rem 2rem;
   margin-right: 0.2rem;
@@ -81,6 +98,7 @@ body {
   flex-grow: 1;
   padding: 1rem;
   color: #fff;
+  scroll-margin-top: 8rem;
 }
 
 .tab h1 {
@@ -164,7 +182,6 @@ a {
 }
 
 .blog-container ul li {
-  order: 1;
   display: block;
   margin-bottom: 0.2rem;
   cursor: pointer;
@@ -269,22 +286,23 @@ pre {
 .table th {
   padding-top: 11px;
   padding-bottom: 11px;
-  background-color: #4caf50;
+  background-color: #1b247a;
   color: white;
 }
 .table tr {
-  background-color: #061328;
-}
-
-.table tr:nth-child(3n) {
-  background-color: #122541;
+  background-color: #161f74;
 }
 
 .table tr:nth-child(2n) {
-  background-color: #031e46;
+  border-bottom: 1px solid white;
 }
+
 /* Mobile UI Changes*/
 @media (max-width: 45em) {
+  .title-bar + section,
+  .title-bar + .container {
+    margin-top: 24rem !important;
+  }
   .center-items {
     flex-direction: column;
     text-align: center;
@@ -296,6 +314,7 @@ pre {
   .tab {
     margin: 0 auto !important;
     padding: 0;
+    scroll-margin-top: 23rem;
   }
   .title-bar ul {
     flex-direction: column;

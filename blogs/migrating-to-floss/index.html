@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/icons/logo-with-bg.svg">
+  <link rel="icon" type="image/png" href="/images/me.svg">
   <title>Migrating to FLOSS</title>
   <link rel="stylesheet" href="/styles/index.css">
   <base href="/" />
@@ -44,7 +44,6 @@
 
       tr {
         border: none;
-        margin-bottom: 1em;
       }
 
       td {
@@ -68,49 +67,41 @@
         font-weight: bold;
       }
     }
+
+    details summary+.section {
+      padding: 2rem;
+    }
+
+    .icon {
+      fill: white;
+    }
   </style>
 </head>
 
 <body>
-  <section class="section">
-    <nav class="title-bar">
-      <ul>
-        <li>
-          <a href="/" class="header"><img src="/images/me.svg" width="50" />Coding Otaku</a>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <a href="#about" tabindex="1" class="nav-item">About</a>
-            </li>
-            <li>
-              <a href="#blogs" tabindex="2" class="nav-item">Blogs</a>
-            </li>
-            <li>
-              <a href="#uses" tabindex="3" class="nav-item">Uses</a>
-            </li>
-            <li>
-              <a href="#contact" tabindex="4" class="nav-item">Contact</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <noscript>
-      <div class="notification">
-        <div class="title">
-          Please enable JavaScript to navigate.
-        </div>
-        <div>
-          This page is auto-generated and does <strong>not</strong> contain any form of telemetry or ads.<br>
-          JavaScript is required to use the "Know more" option available in this page.<br>
-          Complete source code for this site can be found at <strong><a
-              href="https://github.com/CodingOtaku/codingotaku.github.io"
-              target="_blank">https://github.com/CodingOtaku/codingotaku.github.io</a></strong>.
-        </div>
-      </div>
-    </noscript>
-  </section>
+  <nav class="title-bar">
+    <ul>
+      <li>
+        <a href="/" class="header"><img src="/images/me.svg" width="50" />Coding Otaku</a>
+      </li>
+      <li>
+        <ul>
+          <li>
+            <a href="#about" tabindex="1" class="nav-item">About</a>
+          </li>
+          <li>
+            <a href="#blogs" tabindex="2" class="nav-item">Blogs</a>
+          </li>
+          <li>
+            <a href="#uses" tabindex="3" class="nav-item">Uses</a>
+          </li>
+          <li>
+            <a href="#contact" tabindex="4" class="nav-item">Contact</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
   <div class="container">
     <div class="content text-white">
       <section>
@@ -176,7 +167,6 @@
             <thead>
               <th class="text-danger">Avoid</th>
               <th class="text-success">Use</th>
-              <th>Reason</th>
             </thead>
             <tbody>
               <tr>
@@ -196,11 +186,62 @@
                   </span>
                   GNU/Linux</a>
                 </td>
-                <td><button class="button is-dark" onclick="launch('os_desktop')">Know More...</button></td>
               </tr>
               <tr>
-                <td colspan="3" class="hide">
-                  <div id="os_desktop"></div>
+                <td colspan="3">
+                  <details>
+                    <summary class="button">Know More...</summary>
+                    <section class="section">
+                      <a href="https://www.debian.org/intro/pages/about#disbelief" target="_blank">
+                        Quoting
+                      </a> from debian:<br>
+                      <div class="notification is-dark">
+                        Software is <b>not</b> like making a car. Once you've made one copy of your software, the
+                        production costs
+                        to make a
+                        million more are tiny<br>
+                        (there's a reason Microsoft has so many billions in the bank).
+                      </div>
+                      It <i>does</i> make sense to pay/donate a little to the people who developed your favorite OS,
+                      but the amount
+                      should be tiny, not 100s of Dollars.<br><br>
+                      <b>But that is just in cost perspective, there are other moral and ethical reasons for you to
+                        stay away from
+                        these
+                        Operating systems.</b><br><br>
+                      <a href="https://www.privacytools.io/operating-systems/#win10" target="_blank">Windows 10
+                        is a privacy nightmare
+                      </a>
+                      and <a href="https://www.gnu.org/proprietary/malware-microsoft.html" target="_blank">
+                        malware
+                      </a>,
+                      <a href="https://www.gnu.org/proprietary/malware-apple.html" target="_blank">Mac OS Does
+                        not care about user freedom!
+                      </a><br><br>
+                      But don't worry, There are other operating systems which exists which is free and much better.
+                      One alternative
+                      is GNU/Linux and this is the only Operating system I know which cares about user freedom.<br>
+                      You can get a list of GNU/Linux Operating systems from
+                      <a href="https://www.gnu.org/distros/free-distros.html" target="_blank">here</a>.
+                      <br><a href="https://pureos.net/" target="_blank">PureOS</a>
+                      is a fully free GNU/Linux distribution based on Debian and will probably suit your needs.
+                      <br><br>
+                      <i>Personally I feel debian can be used as long as you don't install anything
+                        from its non-free repository. I use it in my main system and it works great!
+                      </i><br><br>
+
+                      But what if you just came from Windows or Mac and you want the OS to "Just Work" and install
+                      whatever you want?
+                      There are other GNU/Linux operating systems exists which are
+                      <a href="https://www.gnu.org/distros/common-distros.html" target="_blank">
+                        not fully free
+                      </a>.<br>
+                      These non-free distributions came with the cost of your freedom, but much less compared to the
+                      other two
+                      mainstream desktop
+                      operating systems.
+                    </section>
+                  </details>
                 </td>
               </tr>
               <tr>
@@ -219,11 +260,51 @@
                     class="text-success">Other AOSP based operating system for
                     Android</a>
                 </td>
-                <td><button class="button is-dark" onclick="launch('os_mobile')">Know More...</button></td>
               </tr>
               <tr>
-                <td colspan="3" class="hide">
-                  <div id="os_mobile"></div>
+                <td colspan="3">
+                  <details>
+                    <summary class="button"> Know More...</summary>
+                    <section class="section">
+                      iOS also restricts user freedom just like Mac OS, <a
+                        href="https://www.gnu.org/proprietary/malware-apple.html#jails" target="_blank">The
+                        users are kept in a jail</a> with
+                      less
+                      access to the free world.
+                      It is basically same as Mac OS in terms of user freedom.<br>
+                      I Do not recommend anyone to use Apple products if you wish to have a private
+                      life.
+                      They
+                      might promise you security but it is impossible for you to verify them unless
+                      they
+                      provide you with the source code which can reproduce their build.
+                      <br><br>
+                      There are no good alternatives for Android, if you install the malwares such as
+                      <span class="tag is-danger">Google Play Services</span> or <span
+                        class="tag is-danger">Playstore</span> you will
+                      compromise your setup.
+                      Sadly these comes built-in with almost all mobiles.<br><br>
+                      <div class="notification is-success">
+                        This is the reason I promote custom roms like <a href="https://www.lineageos.org"
+                          target="_blank">LineageOS</a>
+                        and <a href="https://omnirom.org/" target="_blank">OmniRom</a>
+                        instead. The official guide
+                        asks you to install GApps (Google apps),
+                        but if you avoid it and install <a href="http://f-droid.org/" target="_blank">F-Droid</a>
+                        instead of playstore,
+                        you
+                        are good to go.
+                      </div>
+                      <br>
+                      <i>You can always buy <a href="https://puri.sm/products/librem-5/">Librem
+                          5</a> or <a href="https://www.pine64.org/pinephone/" target="_blank">Pinephone</a>
+                        if you wish to have a <span class="tag is-success">GNU/Linux system in your pocket</span><br>
+                        But they are not yet a full fledged mobile and needs a lot of improvements
+                        in
+                        terms
+                        of performance.</i>
+                    </section>
+                  </details>
                 </td>
               </tr>
               <tr>
@@ -242,11 +323,46 @@
                     </span>
                   </a>
                 </td>
-                <td><button class="button is-dark" onclick="launch('store_mobile')">Know More...</button></td>
               </tr>
               <tr>
-                <td colspan="3" class="hide">
-                  <div id="store_mobile"></div>
+                <td colspan="3">
+                  <details>
+                    <summary class="button">Know More...</summary>
+                    <section class="section">
+                      The pocket world is filled with <a href="/pages/india-chinese-app-ban/"
+                        target="_blank">spyware</a>, but if you are
+                      an Android user
+                      you can
+                      install custom rom to avoid all proprietary apps and
+                      services! F-Droid is a
+                      repo for FLOSS Android Applications<br><br>
+                      Sorry iOS users, you threw away that freedom when you choose Apple. You could still sideload
+                      apps
+                      with <a href="https://github.com/rileytestut/AltStore" target="_blank">AltStore</a>
+                      <i>(there are other stores available now)</i> without <a
+                        href="https://en.wikipedia.org/wiki/IOS_jailbreaking" target="_blank">jailbreaking</a>.
+                      But it is not a FLOSS repo like F-Droid.
+                      <br><br>
+                      The <a href="https://f-droid.org" target="_blank">
+                        F-Droid</a> Repository is an easily-installable catalogue of free and open source apps
+                      for Android. With F-Droid, it's easy to browse and install apps on your device, and keep
+                      track of updates. You can also browse the repository with a web browser, and download the
+                      app directly from there, if you can’t or don’t want to run the F-Droid client on your
+                      device.<br><br>
+                      <div class="notification is-success">
+                        All applications in the default F-Droid repository must be Free and Open Source software – for
+                        example, released under a GPL or Apache license. Every effort is made to verify that
+                        this is actually the case, both by visual inspection of the source, and by building the
+                        application from the published source.
+                      </div><br>
+                      Software that reports user activity without permission (e.g. via Google Analytics) or tracks
+                      user behavior (e.g. most advertising platforms) is specifically excluded from F-Droid’s own
+                      repository, as is software with the primary purpose of interacting with a non-Free network
+                      service. You are, of course, free to set up your own repository for this kind of software –
+                      the server source is available, and the client will allow addition or removal of
+                      repositories as you see fit.
+                    </section>
+                  </details>
                 </td>
               </tr>
               <tr>
@@ -263,15 +379,64 @@
                   <a href="https://guardianproject.info/fdroid/" class="text-success" target="_blank">
                     TorBrowser (Guardian Project)
                   </a>,
-                  <a href="https://www.mozilla.org/en-US/firefox/mobile/" class="text-success"
-                    target="_blank">Firefox
+                  <a href="https://www.mozilla.org/en-US/firefox/mobile/" class="text-success" target="_blank">Firefox
                     Mobile
                 </td>
-                <td><button class="button is-dark" onclick="launch('browser_mobile')">Know More...</button></td>
               </tr>
               <tr>
-                <td colspan="3" class="hide">
-                  <div id="browser_mobile"></div>
+                <td colspan="3">
+                  <details>
+                    <summary class="button">Know More...</summary>
+                    <section class="section">
+                      I did not add Chromium and other browsers based on it in this list purposefully. It has some
+                      of Google bloats that
+                      needs to be removed and some folks have made <a
+                        href="https://ungoogled-software.github.io/pages/about/" target="_blank">ungoogled chromium</a>
+                      for that specific purpose.<br>
+                      But user needs to add an extra <a
+                        href="https://git.droidware.info/wchen342/ungoogled-chromium-android#user-content-f-droid-repository"
+                        target="_blank">unofficial repo</a> to F-Droid to install
+                      this.<br><br>
+                      <a href="https://en.wikipedia.org/wiki/WebKit" target="_blank">WebKit</a>
+                      engine based browsers are <a href="https://support.mozilla.org/en-US/questions/1101350"
+                        target="_blank">forced
+                        onto iPhone users</a>, Apples policy does
+                      not allow developers to develop a browser that is not based on their tool (Another reason to
+                      stay away from Apple).
+                      <br><br>
+                      While
+                      <a href="https://www.mozilla.org/en-US/firefox/mobile/" target="_blank">
+                        Firefox
+                      </a> source code from the Mozilla project is free
+                      software, they distribute and recommend nonfree software as plug-ins and addons. Also their
+                      trademark license imposes requirements for the distribution of modified versions that make
+                      it inconvenient to exercise freedom 3.<br><br>
+                      <a href="https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/" target="_blank">
+                        Fennec F-Droid
+                      </a> is based on the latest Firefox
+                      release. It's focused on removing any
+                      proprietary bits found in official Mozilla's builds. There might still be some binaries left
+                      and the app (or some builds) might get removed or re-pushed anytime.<br><br>
+                      But Fennec is also not fully Free-- it is just a variant of firefox without the binary
+                      blobs.
+                      This is the reason why
+                      <a href="https://f-droid.org/en/packages/org.gnu.icecat/" target="_blank">
+                        IceCatMobile
+                      </a> was developed.
+                      IceCatMobile is a Browser using the Gecko layout engine to render web pages, which
+                      implements current and anticipated web standards. This is a free software rebranding of the
+                      latest Firefox-ESR release.
+                      read more about IceCat
+                      <a href="https://www.gnu.org/software/gnuzilla/" target="_blank">
+                        here</a>.<br><br>
+                      Another option is the Tor Browser, though it is
+                      <a href="https://support.torproject.org/tormobile/tormobile-7/" target="_blank">not in
+                        official F-Droid repo yet</a>, you can enable the
+                      <a href="https://guardianproject.info/fdroid/" target="_blank">Guardian
+                        Project Official App Repository
+                      </a> in F-Droid to install it.
+                    </section>
+                  </details>
                 </td>
               </tr>
               <tr>
@@ -287,11 +452,78 @@
                     target="_blank">Telegram FOSS
                   </a>
                 </td>
-                <td><button class="button is-dark" onclick="launch('communication_mobile')">Know More...</button></td>
               </tr>
               <tr>
-                <td colspan="3" class="hide">
-                  <div id="communication_mobile"></div>
+                <td colspan="3">
+                  <details>
+                    <summary class="button">Know More...</summary>
+                    <section class="section">
+                      <strong>Communication must not be done in a walled garden</strong>, using protocols instead of
+                      apps makes sure that
+                      you can
+                      talk to anyone regardless of the app they use. This is the main reason I ask people to switch to
+                      <a href="https://element.io/">Element</a>.<br>
+                      Element works with all Matrix-based apps and bridges into proprietary messengers too. <br><br>
+
+                      Signal is another candidate, but I am adding it here half-heartedly. Unlike Element, using it with
+                      other apps
+                      will be a hassle right now and
+                      requires you to use your phone number to create an account. Signal app does not exist in f-droid
+                      and the
+                      developer has been hesitant to do so for many years (here is one <a
+                        href="https://whispersystems.discoursehosting.net/t/how-to-get-signal-apks-outside-of-the-google-play-store/808/20">instance</a>).<br>
+                      The Signal clients and server does support federation, it is just a matter of time before it
+                      becomes fully
+                      federated. It is said to get a phone number free feature in the future and until then
+                      theoretically one could
+                      use a burner number for it.<br><br>
+
+                      Telegram also raise some concerns as the chat is not default end-to-end encrypted and requires you
+                      to identify
+                      yourself with your number.
+                      The encryption is done on the server side with their own solution. User will have to just "Trust"
+                      the maintainers,
+                      so I
+                      recommend you to use Telegram only if you need to part of a public channel - not for secure
+                      messaging.<br><br>
+
+                      But these are much better in terms of privacy and security compared to the mainstream
+                      applications.<br><br>
+                      There is a widespread misconception that WhatsApp is secure and privacy-friendly.
+                      While WhatsApp can’t see what’s inside the messages, they can see your activities, who is
+                      sending a message to
+                      whom and when - which is a large risk (read more on their policies from the links
+                      below).<br><br>
+                      And according to the WhatsApp <a href="https://www.whatsapp.com/legal/?_fb_noscript=1"
+                        target="_blank">privacy
+                        policy</a>, <strong>the company reserves the
+                        right to record this
+                        information, known as message metadata, and share information with <span
+                          class="has-text-danger">"others"</span>
+                        including(<span class="has-text-danger">but
+                          obviously not limited to</span>) law enforcement and to respond to legal
+                        requests.</strong>
+                      If you use their service, please check their statements regularly.<br>
+                      They also design the privacy policy page in a way that it is hard to point to a section of their
+                      statement through links.<br>
+                      Details on information shared to law enforcement can be found <a
+                        href="https://faq.whatsapp.com/general/security-and-privacy/information-for-law-enforcement-authorities?_fb_noscript=1"
+                        target="_blank">here</a>.
+                      <br><br>
+                      Facebook Messenger is even cruel in terms of privacy, I could not find a privacy policy for
+                      their messenger app, the best I could find is <a href="https://www.messenger.com/privacy"
+                        target="_blank">this</a>.
+                      I will just assume that it has the same <a href="https://www.facebook.com/full_data_use_policy"
+                        target="_blank">policies</a> as
+                      Facebook.
+
+                      <a href="https://googleduoforpc.com/privacy-policy/" target="_blank">Google Duo</a>,
+                      <a href="https://hike.zendesk.com/hc/en-us/articles/230607627-Privacy-Policy"
+                        target="_blank">Hike</a>,
+                      and <a href="https://terms.line.me/line_rules/" target="_blank">Line</a> follows the
+                      same trend.<br><br>
+                    </section>
+                  </details>
                 </td>
               </tr>
               <tr>
@@ -301,16 +533,20 @@
                 <td>
                   <a href="https://diasporafoundation.org/" class="text-success" target="_blank">Diaspora</a>
                 </td>
-                <td><button class="button is-dark" onclick="launch('social_mobile')">Know More...</button></td>
               </tr>
               <tr>
-                <td colspan="3" class="hide">
-                  <div id="social_mobile"></div>
+                <td colspan="3">
+                  <details>
+                    <summary class="button">Know More...</summary>
+                    <section class="section">
+                      <span class="subtitle has-text-white">Description Coming Soon!</span>
+                    </section>
+                  </details>
                 </td>
               </tr>
             </tbody>
           </table>
-
+          <br><br>
           - Be safe
         </div>
       </section>
@@ -328,45 +564,6 @@
       is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
     </div>
   </footer>
-  <script>
-    function launch(page) {
-      const frame = document.getElementById(page);
-      if (!frame.innerHTML) {
-        fetch(`/blogs/migrating-to-floss/know/${page}.html`).then(res => res.text()).then(res => {
-          frame.innerHTML = res
-        })
-      }
-      const parent = frame.parentNode;
-      if (parent.classList.contains('hide')) {
-        parent.classList.remove('hide');
-      } else {
-        parent.classList.add('hide');
-      }
-    }
-  </script>
-  <style>
-    .divider {
-      display: block;
-      height: 2px;
-      border: 1px solid #aaaaaa;
-      margin: 2rem 2rem;
-    }
-
-    @media screen and (min-width:769px),
-    print {
-
-      .modal-card,
-      .modal-content {
-        margin: 0 auto;
-        max-height: calc(100vh - 40px);
-        width: 769px;
-      }
-    }
-
-    .hide {
-      display: none;
-    }
-  </style>
 </body>
 
 </html>

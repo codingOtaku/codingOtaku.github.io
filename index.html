@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Home - Coding Otaku</title>
@@ -26,21 +26,22 @@
   <nav class="title-bar">
     <ul>
       <li>
-        <a href="/" class="header"><img src="/images/me.svg" width="50" />Coding Otaku</a>
+        <a href="/" class="header"><img src="/images/me.svg" width="50"
+            alt="Coding Otaku Logo drawn like a fat man wearing glasses." />Coding Otaku</a>
       </li>
       <li>
         <ul>
           <li>
-            <a href="#about" tabindex="1" class="nav-item">About</a>
+            <a href="/#about" class="nav-item">About</a>
           </li>
           <li>
-            <a href="#blogs" tabindex="2" class="nav-item">Blogs</a>
+            <a href="/#blogs" class="nav-item">Blogs</a>
           </li>
           <li>
-            <a href="#uses" tabindex="3" class="nav-item">Uses</a>
+            <a href="/#uses" class="nav-item">Uses</a>
           </li>
           <li>
-            <a href="#contact" tabindex="4" class="nav-item">Contact</a>
+            <a href="/#contact" class="nav-item">Contact</a>
           </li>
         </ul>
       </li>
@@ -48,26 +49,29 @@
   </nav>
   <section>
     <div class="content">
-
+      <noscript>
+        <div class="box">
+          <span class="text-success">JavaScript is not required for this site and you do NOT need to enable
+            it.</span><br>
+          Inspired by <a href="https://fosstodon.org/@alexbuzzbee/105291220257143372" target="_blank">@alexbuzzbee's toot</a>
+        </div>
+      </noscript>
       <div class="tab" id="about">
         <article>
           <header>
             <h1>Welcome to My Website!</h1>
           </header>
           <div class="box">
-            <h4>What is this site?</h4>
+            <h2>What is this site?</h2>
             <p>
-              This is my attempt to make a fully JavaScript-free website/blog. I have revised it many
-              times using various CSS frameworks before,
-              but I have decided to do it completely from scratch this time.<br>
-
-              <s>I might still have some JS left in some sub-pages (WIP on liberating them), but they are not
-              necessary to use this site,</s>
-              <strong>this means you don't need to add an exception in your NoScript add-on.</strong>
+              This is an attempt to make a fully JavaScript-free, Accessibility friendly, and bloat-less website/blog. I
+              have revised it many
+              times using various CSS frameworks before, But this time, I do it without the help of other
+              frameworks.
             </p>
           </div>
           <div class="box">
-            <h4>The name is confusing, what does it mean?</h4>
+            <h2>The name is confusing, what does it mean?</h2>
             <p>I came up with the name <strong>Coding Otaku</strong> while searching
               for a name that's related to both programming and Anime. I like watching Anime just as much
               as I love tinkering with code.
@@ -94,11 +98,12 @@
           <header>
             <h1>My Rants</h1>
           </header>
-          <h3 class="text-center">The Blogs are not fully migrated yet, UI is very ugly right now.</h3>
-          <h4 class="text-center">
-            Find my previous blog site <a href="https://blog.codingotaku.com" target="_blank">here</a>
+          <h2 class="text-center">The Blogs are not fully migrated yet, UI is very ugly right now.</h2>
+          <h3 class="text-center">
+            You can find my previous blog site at <a href="https://blog.codingotaku.com"
+              target="_blank">blog.codingotaku.com</a>
             <span class="text-danger">(Requires JavaScript)</span>
-          </h4>
+          </h3>
           <div class="blog-container">
             <ul>
               <li>
@@ -140,7 +145,7 @@
               <li>
                 <a href="/blogs/migrating-to-floss/">
                   <time datetime="2020-07-23">23 July 2020</time>
-                  Migrating to FLOSS! 
+                  Migrating to FLOSS!
                 </a>
               </li>
               <li>
@@ -160,7 +165,7 @@
             <h1>The Tech I Use</h1>
           </header>
           <div class="box">
-            <h4>Workstation</h4>
+            <h2>Workstation</h2>
             <p>
             <ul>
               <li>Operating System - <a href="https://endeavouros.com/">EndeavourOS</a></li>
@@ -177,7 +182,7 @@
             </p>
           </div>
           <div class="box">
-            <h4>Self-Host</h4>
+            <h2>Self-Host</h2>
             I self-host my videos and comment servers. My long term goal is to self-host every service that
             I use.
             <ul>
@@ -199,7 +204,8 @@
           <div class="box">
             <div class="center-items">
               <span>
-                <img src="/images/me.svg" alt="CodingOtaku Logo" width="50" title="CodingOtaku Logo">
+                <img src="/images/me.svg" alt="CodingOtaku Logo drawn like a fat man with glasses." width="50"
+                  title="CodingOtaku Logo">
               </span>
               <span>
                 <img src="/images/fsf.png" alt="Free Software Foundation member since July 2020" width="180"
@@ -208,7 +214,7 @@
             </div>
           </div>
           <div class="box">
-            <h4>Primary contact</h4>
+            <h2>Primary contact</h2>
             <p>The best way to get in touch with me is by e-mail
               <a href="mailto:contact@codingotaku.com">contact@codingotaku.com</a><br>
             </p>
@@ -216,7 +222,7 @@
             </p>
           </div>
           <div class="box">
-            <h4>Social</h4>
+            <h2>Social</h2>
             The only "Social Media" I use right now is Mastodon, I'm also linking to other places you
             can/cannot find me.<br><br>
             <div class="center-items">

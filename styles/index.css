@@ -292,8 +292,10 @@ pre {
 .table tr {
   background-color: #606060;
 }
-
-.table tr:nth-child(2n) {
+.table.normal tr:nth-child(2n) {
+  background-color: #505050;
+}
+.table.dt tr:nth-child(2n) {
   border-bottom: 1px solid white;
 }
 

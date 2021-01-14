@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <meta name="description" content="The reasons why I say and write GNU/Linux instead of Linux" />
+  <meta name="author" content="Rahul Sivananda" />
+  <meta name="keywords" content="coding-otaku, Gnu, linux, freedom, fsf, richard stallman, kerala" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+  <link rel="icon" type="image/png" href="/images/me.svg" />
+  <title>Switching to Signal is not enough - Coding Otaku Blog</title>
+  <link rel="stylesheet" href="/styles/index.css">
+  <base href="/" />
+</head>
+
+<body>
+  <nav class="title-bar">
+    <ul>
+      <li>
+        <a href="/" class="header"><img src="/images/me.svg" width="50"
+            alt="Coding Otaku Logo drawn like a fat man wearing glasses." />Coding Otaku</a>
+      </li>
+      <li>
+        <ul>
+          <li>
+            <a href="/#about" class="nav-item">About</a>
+          </li>
+          <li>
+            <a href="/#blogs" class="nav-item">Blogs</a>
+          </li>
+          <li>
+            <a href="/#uses" class="nav-item">Uses</a>
+          </li>
+          <li>
+            <a href="/#contact" class="nav-item">Contact</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <div class="content">
+      <section>
+        <div class="container">
+          <h1 class="title has-text-white">Switching to Signal is Not Enough</h1>
+          <h2 class="subtitle">But it's a good step towards the right direction.</h2>
+          <span>
+            - Created on <time datetime="2021-01-14">14<sup>th</sup> January 2021 </time>
+          </span>
+        </div>
+      </section><br>
+      <section>
+        <div class="blog-box">
+          <p>
+            Switching to <a href="https://signal.org/" target="_blank">Signal</a> is a good step towards the right
+            direction, but it is not enough.<br>
+            We are seeing a massive spike in Signal
+            <a href="https://www.msn.com/en-in/money/topstories/what-is-signal-why-is-it-trending-is-it-better-than-whatsapp/ar-BB1cCxgK"
+              target="_blank">installations</a> since WhatsApp introduced their new privacy policy.<br>
+
+            Though there are many other alternatives available, Signal is getting popular, but the hype is due to A
+            celebrity's tweet to "Install Signal".
+          </p>
+          <p>
+            Unlike WhatsApp, Signal is a non-profit organization, and Signal is a free and open-source client.
+            This makes Signal superior in terms of security as they have gone through multiple audits and anyone can
+            verify that the encryption is done correctly.
+          </p>
+          <p>
+            There are things in common for both of them, some are good and some are... not so much.
+          <details>
+            <summary class="text-danger">Both are centralized</summary>
+            <p>
+              If Signal goes the wrong way, we cannot just switch a server and continue like what we can do with other
+              decentralized, federated services link Mastodon, PeerTube, or Matrix.</p>
+            <p>
+              A wide adoption to a centralized service is never a good idea as moving from it means you have to convince
+              everyone else using that service to move with you (isn't this what's happening with WhatsApp?).
+            </p>
+            <p>
+              But if the service is decentralized, one can just switch from the server they don't like, it's like
+              switching the e-mail, you'll just change the domain, and everyone can still mail you without installing
+              another app or using a new different service.
+            </p>
+            </p>
+          </details>
+          <details>
+            <summary class="text-danger">Both are not available on F-Droid or other Foss stores</summary>
+            <p>
+              WhatsApp does not qualify the requirements to be included in the F-Droid store, this is because WhatsApp
+              is a proprietary application and has non-free binaries included in it.</p>
+            <p>
+              But Signal does qualify (or it used to until Signal devs decided to included Google reCAPTCHA)
+              and the developer Moxie is against having Signal published in F-Droid.</p>
+            <p>
+              Instead, He decided to provide a link on the website to download the android APK directly.
+              The link is not mentioned anywhere on the website, instead if you search for "Signal APK" in your search
+              engine, you will be able to find the link to download the file.<br>
+              But the page will warn you and try it's best to install the app from the privacy invading Google
+              Play Store.
+            </p>
+            <p>
+              F-Droid allows anyone to create custom repositories and that would be a much secure way to download the
+              application than a direct link.
+            </p>
+          </details>
+          <details>
+            <summary class="text-success">Both uses Signal protocol</summary>
+            <p>Signal protocol is one of the most secure cryptographic protocol that can be used to provide end-to-end
+              encryption for voice, video and text conversations.<br>
+              WhatsApp claims to use Signal protocol, but by design (proprietary service) there is a way for the user to
+              verify if WhatsApp actually uses it or not.
+            </p>
+          </details>
+          </p>
+          <p>
+            Instead of relying on applications, one should rely on protocols, this makes sure that anyone can use the
+            app of their choice to contact you.<br>
+            Here are the list of protocols and services.
+            <table class="table normal">
+              <tr>
+                <th>Platform</th>
+                <th>Apps</th>
+                <th>Alternative for</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>Mastodon</td>
+                  <td>Tusky<br>Fedilab</td>
+                  <td>Twitter</td>
+                </tr>
+                <tr>
+                  <td>Matrix</td>
+                  <td>Element.io</td>
+                  <td>Discord</td>
+                </tr>
+                <tr>
+                  <td>PeerTube</td>
+                  <td>
+                    TubeLab<br>
+                    Fedilab<br>
+                    Newpipe<br>
+                  </td>
+                  <td>YouTube</td>
+                </tr>
+                <tr>
+                  <td>XMPP</td>
+                  <td>Conversations</td>
+                  <td>Any instant messenger</td>
+                </tr>
+                <tr>
+                  <td>Jami<br>Jitsi</td>
+                  <td>Jami<br>Jitsi</td>
+                  <td>Zoom<br>Hangouts<br>Skype</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="blog-bar">
+      <h1 class="title text-center">More Blogs</h1>
+      <iframe src="/blogs/" type="text/html" class="blog-nav"></iframe>
+    </div>
+  </section>
+  <footer class="footer box">
+    <div class="text-center">
+      <strong>This blog is made by</strong> <a href="https://codingotaku.com">Coding
+        Otaku</a>. The source code is
+      licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -174,10 +174,11 @@ a {
   margin-bottom: 2em;
 }
 .blog-bar {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   height: 75vh;
-  width: 1024px;
+  width: 75%;
+  max-width: 1024px;
   margin: 0 auto;
 }
 

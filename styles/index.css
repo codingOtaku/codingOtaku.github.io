@@ -42,7 +42,7 @@ body {
   padding-right: 1em;
   display: flex;
   justify-content: space-around;
-  max-width: 1024px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -176,7 +176,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 75vh;
-  width: 75%;
+  width: 100%;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -276,7 +276,6 @@ pre {
 
 .table td,
 .table th {
-  order: 1px solid #ddd;
   text-align: left;
   padding: 8px;
   padding-top: 8px;
@@ -286,14 +285,14 @@ pre {
 .table th {
   padding-top: 11px;
   padding-bottom: 11px;
-  background-color: #333;
+  background-color: #18396e;
   color: white;
 }
 .table tr {
-  background-color: #606060;
+  background-color: #122541
 }
 .table.normal tr:nth-child(2n) {
-  background-color: #505050;
+  background-color: #061328
 }
 .table.dt tr:nth-child(2n) {
   border-bottom: 1px solid white;

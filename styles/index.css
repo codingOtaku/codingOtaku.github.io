@@ -26,6 +26,8 @@ body {
 .title-bar {
   position: fixed;
   background-color: #061328;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -47,10 +49,8 @@ body {
 }
 
 .header {
-  text-decoration: none;
   font-size: x-large;
-  font-weight: bolder;
-  color: white;
+  align-self: center;
 }
 .header span, .header img {
   vertical-align: middle;
@@ -319,15 +319,13 @@ pre {
   .tab {
     margin: 0 auto !important;
     padding: 0;
-    scroll-margin-top: 0 !important;
-  }
-  .title-bar ul {
-    flex-direction: column;
+    scroll-margin-top: 1em !important;
   }
 
   .header,
   .nav-item {
     text-align: center;
+    padding: 0.5em;
     margin: 0;
   }
   .columns {

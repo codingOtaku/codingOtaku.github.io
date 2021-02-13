@@ -312,7 +312,7 @@ pre {
     margin-top: 2rem !important;
   }
   .center-items {
-    flex-direction: column;
+    display: block;
     text-align: center;
   }
   .content {
@@ -337,6 +337,10 @@ pre {
   }
   .columns .column {
     display: block;
+  }
+
+  .blog-box {
+    padding: 0;
   }
 
   .blog-container ul {

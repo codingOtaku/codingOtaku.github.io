@@ -123,7 +123,6 @@ h1 {
   flex-direction: column;
   max-width: 1024px;
   margin: 0 auto;
-  background-color: var(--bg);
   padding: 2rem;
   border-radius: 50px;
 }
@@ -134,7 +133,6 @@ article {
 }
 
 .box {
-  background-color: var(--bg);
   padding: 2em;
   border-radius: 10px;
   margin: 0 auto;
@@ -157,12 +155,10 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 
 .notification {
   border-radius: 10px;
-  background-color: var(--bg);
   width: 100%;
   padding: 1rem;
   margin: 1rem -1rem;
@@ -176,7 +172,6 @@ a {
   width: 28px;
 }
 .blog-box {
-  background-color: var(--bg);
   padding: 2em;
   border-radius: 10px;
   margin-bottom: 2em;
@@ -199,7 +194,6 @@ a {
   display: block;
   margin-bottom: 0.2rem;
   cursor: pointer;
-  background-color: var(--bg);
   border-radius: 50px 50px 50px 50px;
   font-weight: bold;
 }
@@ -294,11 +288,7 @@ pre {
 .table th {
   padding-top: 11px;
   padding-bottom: 11px;
-  background-color: var(--bg);
   color: white;
-}
-.table tr {
-  background-color: var(--bg);
 }
 
 /* Mobile UI Changes*/

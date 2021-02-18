@@ -1,9 +1,12 @@
 /* Base level themes */
+:root {
+  --bg: #122541;
+}
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #061328;
+  background-color: var(--bg);
   color: rgb(232, 230, 227);
 }
 
@@ -25,7 +28,7 @@ body {
 
 .title-bar {
   position: fixed;
-  background-color: #061328;
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -102,7 +105,10 @@ body {
   flex-grow: 1;
   padding: 1rem;
   color: #fff;
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 10rem;
+  margin: 0 auto 2em auto;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 h1 {
@@ -117,7 +123,7 @@ h1 {
   flex-direction: column;
   max-width: 1024px;
   margin: 0 auto;
-  background-color: #0a1930;
+  background-color: var(--bg);
   padding: 2rem;
   border-radius: 50px;
 }
@@ -128,10 +134,10 @@ article {
 }
 
 .box {
-  background-color: #122541;
+  background-color: var(--bg);
   padding: 2em;
   border-radius: 10px;
-  margin-top: 2em;
+  margin: 0 auto;
 }
 
 .box h4 {
@@ -156,7 +162,7 @@ a {
 
 .notification {
   border-radius: 10px;
-  background-color: #122541;
+  background-color: var(--bg);
   width: 100%;
   padding: 1rem;
   margin: 1rem -1rem;
@@ -170,7 +176,7 @@ a {
   width: 28px;
 }
 .blog-box {
-  background-color: #0a1930;
+  background-color: var(--bg);
   padding: 2em;
   border-radius: 10px;
   margin-bottom: 2em;
@@ -193,13 +199,13 @@ a {
   display: block;
   margin-bottom: 0.2rem;
   cursor: pointer;
-  background-color: #122541;
+  background-color: var(--bg);
   border-radius: 50px 50px 50px 50px;
   font-weight: bold;
 }
 
 .blog-container ul li:hover {
-  background: #061328;
+  background-color: #1c3660;
 }
 
 .blog-container ul li a {
@@ -288,17 +294,11 @@ pre {
 .table th {
   padding-top: 11px;
   padding-bottom: 11px;
-  background-color: #18396e;
+  background-color: var(--bg);
   color: white;
 }
 .table tr {
-  background-color: #122541
-}
-.table.normal tr:nth-child(2n) {
-  background-color: #061328
-}
-.table.dt tr:nth-child(2n) {
-  border-bottom: 1px solid white;
+  background-color: var(--bg);
 }
 
 /* Mobile UI Changes*/
@@ -318,9 +318,9 @@ pre {
   .content {
     flex-grow: 1;
     width: unset;
+    padding: 1rem;
   }
   .tab {
-    margin: 0 auto !important;
     padding: 0;
     scroll-margin-top: 1em !important;
   }
